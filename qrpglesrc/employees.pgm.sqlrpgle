@@ -5,7 +5,7 @@ Dcl-Pi EMPLOYEES;
   DEPTNO Char(3);
 End-Pi;
 
-/include 'constants.rpgleinc'
+/include 'qrpgleref/constants.rpgleinc'
 
 Dcl-F emps WORKSTN Sfile(SFLDTA:Rrn) IndDS(WkStnInd) InfDS(FILEINFO);
 

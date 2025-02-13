@@ -1,0 +1,6 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>  CHGCURLIB CURLIB(HEKKR4001)
+>  ADDLIBLE LIB(HEKKR4001) POSITION(*FIRST)
+Backing up 1 object(s)...
+>  CRTDSPF FILE(HEKKR4001/DEPTS) SRCFILE(QTEMP/QSOURCE) SRCMBR(DEPTS) ENHDSP(*YES) RSTDSP(*YES) DFRWRT(*YES) AUT() OPTION(*EVENTF *SRC *LIST) TEXT('')
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<

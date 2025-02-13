@@ -1,0 +1,113 @@
+TIMESTAMP  0 20250213154116
+PROCESSOR  0 999 1
+FILEID     0 999 000000 020 QTEMP/QSQLPRE(DEPTS) 20250213154116 0
+FILEID     0 001 000000 061 /home/HEKKR400/builds/rpgle_demo/qrpglesrc/depts.pgm.sqlrpgle 20250213153544 0
+FILEID     0 002 000005 061 /home/HEKKR400/builds/rpgle_demo/qrpgleref/constants.rpgleinc 20250213100229 0
+EXPANSION  0 000 000000 000000 999 000006 000006
+FILEEND    0 002 000028
+EXPANSION  0 000 000000 000000 999 000035 000035
+FILEEND    0 001 000146
+FILEEND    0 999 000176
+PROCESSOR  0 999 1
+FILEID     0 999 000000 022 QTEMP/QSQLTEMP1(DEPTS) 20250213154116 0
+FILEID     0 001 000000 020 QTEMP/QSQLPRE(DEPTS) 20250213154116 0
+EXPANSION  0 001 000000 000000 999 000081 000145
+EXPANSION  0 001 000124 000124 999 000182 000209
+EXPANSION  0 001 000124 000124 999 000218 000230
+EXPANSION  0 001 000131 000131 999 000238 000246
+EXPANSION  0 001 000144 000144 999 000260 000271
+FILEEND    0 001 000176
+FILEEND    0 999 000303
+PROCESSOR  0 000 1
+FILEID     0 001 000000 044 /QSYS.LIB/QTEMP.LIB/QSQLTEMP1.FILE/DEPTS.MBR 20250213154116 0
+ERROR      0 001 1 000204 000204 009 000204 017 RNF7031 I 00 050 The name or indicator SQL_00014 is not referenced.
+ERROR      0 001 1 000206 000206 009 000206 017 RNF7031 I 00 050 The name or indicator SQL_00016 is not referenced.
+ERROR      0 001 1 000207 000207 009 000207 017 RNF7031 I 00 050 The name or indicator SQL_00017 is not referenced.
+ERROR      0 001 1 000208 000208 009 000208 017 RNF7031 I 00 050 The name or indicator SQL_00018 is not referenced.
+ERROR      0 001 1 000194 000194 009 000194 017 RNF7031 I 00 050 The name or indicator SQL_00007 is not referenced.
+ERROR      0 001 1 000195 000195 009 000195 017 RNF7031 I 00 050 The name or indicator SQL_00008 is not referenced.
+ERROR      0 001 1 000197 000197 009 000197 017 RNF7031 I 00 050 The name or indicator SQL_00010 is not referenced.
+ERROR      0 001 1 000185 000185 009 000185 017 RNF7031 I 00 050 The name or indicator SQL_00001 is not referenced.
+ERROR      0 001 1 000188 000188 009 000188 017 RNF7031 I 00 050 The name or indicator SQL_00004 is not referenced.
+ERROR      0 001 1 000189 000189 009 000189 017 RNF7031 I 00 050 The name or indicator SQL_00005 is not referenced.
+ERROR      0 001 1 000075 000075 008 000075 017 RNF7031 I 00 046 The name or indicator MGRNO is not referenced.
+ERROR      0 001 1 000075 000075 008 000075 017 RNF7031 I 00 049 The name or indicator ADMRDEPT is not referenced.
+ERROR      0 001 1 000075 000075 008 000075 017 RNF7031 I 00 049 The name or indicator LOCATION is not referenced.
+ERROR      0 001 1 000041 000041 001 000041 000 RNF7089 I 00 052 RPG provides Separate-Indicator area for file DEPTS.
+ERROR      0 001 1 000034 000034 015 000034 019 RNF7031 I 00 046 The name or indicator FALSE is not referenced.
+ERROR      0 001 1 000062 000062 003 000062 007 RNF7031 I 00 046 The name or indicator CPFID is not referenced.
+ERROR      0 001 1 000063 000063 003 000063 008 RNF7031 I 00 047 The name or indicator MBRNAM is not referenced.
+ERROR      0 001 1 000064 000064 003 000064 008 RNF7031 I 00 047 The name or indicator FMTNAM is not referenced.
+ERROR      0 001 1 000065 000065 003 000065 008 RNF7031 I 00 047 The name or indicator CURSED is not referenced.
+ERROR      0 001 1 000067 000067 003 000067 012 RNF7031 I 00 051 The name or indicator SFLRRN_TOP is not referenced.
+ERROR      0 001 1 000068 000068 003 000068 008 RNF7031 I 00 047 The name or indicator SF_RRN is not referenced.
+ERROR      0 001 1 000069 000069 003 000069 009 RNF7031 I 00 048 The name or indicator SF_RCDS is not referenced.
+ERROR      0 001 1 000007 000007 015 000007 017 RNF7031 I 00 044 The name or indicator F01 is not referenced.
+ERROR      0 001 1 000008 000008 015 000008 017 RNF7031 I 00 044 The name or indicator F02 is not referenced.
+ERROR      0 001 1 000010 000010 015 000010 017 RNF7031 I 00 044 The name or indicator F04 is not referenced.
+ERROR      0 001 1 000011 000011 015 000011 017 RNF7031 I 00 044 The name or indicator F05 is not referenced.
+ERROR      0 001 1 000012 000012 015 000012 017 RNF7031 I 00 044 The name or indicator F06 is not referenced.
+ERROR      0 001 1 000013 000013 015 000013 017 RNF7031 I 00 044 The name or indicator F07 is not referenced.
+ERROR      0 001 1 000014 000014 015 000014 017 RNF7031 I 00 044 The name or indicator F08 is not referenced.
+ERROR      0 001 1 000015 000015 015 000015 017 RNF7031 I 00 044 The name or indicator F09 is not referenced.
+ERROR      0 001 1 000016 000016 015 000016 017 RNF7031 I 00 044 The name or indicator F10 is not referenced.
+ERROR      0 001 1 000017 000017 015 000017 017 RNF7031 I 00 044 The name or indicator F11 is not referenced.
+ERROR      0 001 1 000019 000019 015 000019 017 RNF7031 I 00 044 The name or indicator F13 is not referenced.
+ERROR      0 001 1 000020 000020 015 000020 017 RNF7031 I 00 044 The name or indicator F14 is not referenced.
+ERROR      0 001 1 000021 000021 015 000021 017 RNF7031 I 00 044 The name or indicator F15 is not referenced.
+ERROR      0 001 1 000022 000022 015 000022 017 RNF7031 I 00 044 The name or indicator F16 is not referenced.
+ERROR      0 001 1 000023 000023 015 000023 017 RNF7031 I 00 044 The name or indicator F17 is not referenced.
+ERROR      0 001 1 000024 000024 015 000024 017 RNF7031 I 00 044 The name or indicator F18 is not referenced.
+ERROR      0 001 1 000025 000025 015 000025 017 RNF7031 I 00 044 The name or indicator F19 is not referenced.
+ERROR      0 001 1 000026 000026 015 000026 017 RNF7031 I 00 044 The name or indicator F20 is not referenced.
+ERROR      0 001 1 000027 000027 015 000027 017 RNF7031 I 00 044 The name or indicator F21 is not referenced.
+ERROR      0 001 1 000028 000028 015 000028 017 RNF7031 I 00 044 The name or indicator F22 is not referenced.
+ERROR      0 001 1 000029 000029 015 000029 017 RNF7031 I 00 044 The name or indicator F24 is not referenced.
+ERROR      0 001 1 000031 000031 015 000031 018 RNF7031 I 00 045 The name or indicator HELP is not referenced.
+ERROR      0 001 1 000073 000073 007 000073 011 RNF7031 I 00 046 The name or indicator INDEX is not referenced.
+ERROR      0 001 1 000032 000032 015 000032 019 RNF7031 I 00 046 The name or indicator PRINT is not referenced.
+ERROR      0 001 1 000145 000145 014 000145 019 RNF7031 I 00 047 The name or indicator SQFAPP is not referenced.
+ERROR      0 001 1 000143 000143 014 000143 019 RNF7031 I 00 047 The name or indicator SQFCRT is not referenced.
+ERROR      0 001 1 000144 000144 014 000144 019 RNF7031 I 00 047 The name or indicator SQFOVR is not referenced.
+ERROR      0 001 1 000142 000142 014 000142 018 RNF7031 I 00 046 The name or indicator SQFRD is not referenced.
+ERROR      0 001 1 000085 000085 011 000085 016 RNF7031 I 00 047 The name or indicator SQLAID is not referenced.
+ERROR      0 001 1 000087 000087 011 000087 016 RNF7031 I 00 047 The name or indicator SQLABC is not referenced.
+ERROR      0 001 1 000089 000089 011 000089 016 RNF7031 I 00 047 The name or indicator SQLCOD is not referenced.
+ERROR      0 001 1 000091 000091 011 000091 016 RNF7031 I 00 047 The name or indicator SQLERL is not referenced.
+ERROR      0 001 1 000093 000093 011 000093 016 RNF7031 I 00 047 The name or indicator SQLERM is not referenced.
+ERROR      0 001 1 000095 000095 011 000095 016 RNF7031 I 00 047 The name or indicator SQLERP is not referenced.
+ERROR      0 001 1 000097 000097 011 000097 016 RNF7031 I 00 047 The name or indicator SQLER1 is not referenced.
+ERROR      0 001 1 000098 000098 011 000098 016 RNF7031 I 00 047 The name or indicator SQLER2 is not referenced.
+ERROR      0 001 1 000099 000099 011 000099 016 RNF7031 I 00 047 The name or indicator SQLER3 is not referenced.
+ERROR      0 001 1 000100 000100 011 000100 016 RNF7031 I 00 047 The name or indicator SQLER4 is not referenced.
+ERROR      0 001 1 000101 000101 011 000101 016 RNF7031 I 00 047 The name or indicator SQLER5 is not referenced.
+ERROR      0 001 1 000103 000103 011 000103 017 RNF7031 I 00 048 The name or indicator SQLERRD is not referenced.
+ERROR      0 001 1 000105 000105 011 000105 016 RNF7031 I 00 047 The name or indicator SQLWN0 is not referenced.
+ERROR      0 001 1 000106 000106 011 000106 016 RNF7031 I 00 047 The name or indicator SQLWN1 is not referenced.
+ERROR      0 001 1 000107 000107 011 000107 016 RNF7031 I 00 047 The name or indicator SQLWN2 is not referenced.
+ERROR      0 001 1 000108 000108 011 000108 016 RNF7031 I 00 047 The name or indicator SQLWN3 is not referenced.
+ERROR      0 001 1 000109 000109 011 000109 016 RNF7031 I 00 047 The name or indicator SQLWN4 is not referenced.
+ERROR      0 001 1 000110 000110 011 000110 016 RNF7031 I 00 047 The name or indicator SQLWN5 is not referenced.
+ERROR      0 001 1 000111 000111 011 000111 016 RNF7031 I 00 047 The name or indicator SQLWN6 is not referenced.
+ERROR      0 001 1 000112 000112 011 000112 016 RNF7031 I 00 047 The name or indicator SQLWN7 is not referenced.
+ERROR      0 001 1 000113 000113 011 000113 016 RNF7031 I 00 047 The name or indicator SQLWN8 is not referenced.
+ERROR      0 001 1 000114 000114 011 000114 016 RNF7031 I 00 047 The name or indicator SQLWN9 is not referenced.
+ERROR      0 001 1 000115 000115 011 000115 016 RNF7031 I 00 047 The name or indicator SQLWNA is not referenced.
+ERROR      0 001 1 000116 000116 011 000116 017 RNF7031 I 00 048 The name or indicator SQLWARN is not referenced.
+ERROR      0 001 1 000118 000118 011 000118 016 RNF7031 I 00 047 The name or indicator SQLSTT is not referenced.
+ERROR      0 001 1 000133 000133 015 000133 026 RNF7031 I 00 051 The name or indicator SQLCMIT... is not referenced.
+ERROR      0 001 1 000033 000033 015 000033 018 RNF7031 I 00 045 The name or indicator TRUE is not referenced.
+ERROR      0 001 1 000048 000048 003 000048 012 RNF7031 I 00 051 The name or indicator PROCESSSCF is not referenced.
+ERROR      0 001 1 000049 000049 003 000049 012 RNF7031 I 00 051 The name or indicator REPRINTSCF is not referenced.
+ERROR      0 001 1 000050 000050 003 000050 007 RNF7031 I 00 046 The name or indicator ERROR is not referenced.
+ERROR      0 001 1 000051 000051 003 000051 010 RNF7031 I 00 049 The name or indicator PAGEDOWN is not referenced.
+ERROR      0 001 1 000052 000052 003 000052 008 RNF7031 I 00 047 The name or indicator PAGEUP is not referenced.
+ERROR      0 001 1 000053 000053 003 000053 008 RNF7031 I 00 047 The name or indicator SFLEND is not referenced.
+ERROR      0 001 1 000054 000054 003 000054 010 RNF7031 I 00 049 The name or indicator SFLBEGIN is not referenced.
+ERROR      0 001 1 000055 000055 003 000055 010 RNF7031 I 00 049 The name or indicator NORECORD is not referenced.
+ERROR      0 001 1 000057 000057 003 000057 008 RNF7031 I 00 047 The name or indicator SFLCLR is not referenced.
+FILEEND    0 001 000303
+PROCESSOR  0 000 1
+FILEID     0 000 000000 000  19700101000000 0
+ERROR      0 000 0 000000 000000 000 000000 000 CPC5D07 I 00 043 Program DEPTS created in library HEKKR4001.
+FILEEND    0 000 000000

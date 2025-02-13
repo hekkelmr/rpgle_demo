@@ -10,6 +10,7 @@ test: testsfl.pgm.rpgle
 
 depts.pgm.sqlrpgle: depts.dspf department.table
 employees.pgm.sqlrpgle: emps.dspf employee.table
+testsfl.pgm.rpgle: testpf.pf
 
 ## Rules
 
@@ -27,6 +28,12 @@ employees.pgm.sqlrpgle: emps.dspf employee.table
 	-system -qi "CRTSRCPF FILE($(BIN_LIB)/QDDSSRC) RCDLEN(112)"
 	system "CPYFRMSTMF FROMSTMF('./qddssrc/$*.dspf') TOMBR('/QSYS.lib/$(BIN_LIB).lib/QDDSSRC.file/$*.mbr') MBROPT(*REPLACE)"
 	system -s "CRTDSPF FILE($(BIN_LIB)/$*) SRCFILE($(BIN_LIB)/QDDSSRC) SRCMBR($*)"
+
+%.pf:
+	-system -qi "CRTSRCPF FILE($(BIN_LIB)/QDDSSRC) RCDLEN(112)"
+	system "CPYFRMSTMF FROMSTMF('./qddssrc/$*.pf') TOMBR('/QSYS.lib/$(BIN_LIB).lib/QDDSSRC.file/$*.mbr') MBROPT(*REPLACE)"
+	system -s "DLTF FILE($(BIN_LIB)/$*)"
+	system -s "CRTPF FILE($(BIN_LIB)/$*) SRCFILE($(BIN_LIB)/QDDSSRC) SRCMBR($*)"
 
 %.table: qddssrc/%.table
 	liblist -c $(BIN_LIB);\

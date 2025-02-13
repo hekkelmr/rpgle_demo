@@ -16,7 +16,7 @@ dcl-s rrn packed(5);
 // Indicatoren voor subfile bediening
 dcl-s EndOfFile ind;                 // Indicator voor einde van file
 
-/include 'qrpgref/constants.rpgleinc'
+/include 'qrpgleref/constants.rpgleinc'
 
 // Start programma
 open TESTPF;

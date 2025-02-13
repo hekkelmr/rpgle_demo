@@ -1,6 +1,6 @@
-DEPARTMENT.FILE: department.table
+DEPARTMENT.TABLE: department.table
 DEPTS.FILE: depts.dspf
-EMPLOYEE.FILE: employee.table
+EMPLOYEE.TABLE: employee.table
 EMPS.FILE: emps.dspf
 
 TEST.FILE: testpf.pf

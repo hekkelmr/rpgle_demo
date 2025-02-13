@@ -2,7 +2,7 @@
 
 Ctl-Opt DFTACTGRP(*no);
 
-/include 'constants.rpgleinc'
+/include 'qrpgleref/constants.rpgleinc'
 
 Dcl-Pr Employees ExtPgm;
   DepartmentNumber Char(3);
@@ -52,11 +52,12 @@ Exit = *Off;
 LoadSubfile();
 
 Dow (Not Exit);
+  Write HEADER_FMT;
   Write FOOTER_FMT;
   Exfmt SFLCTL;
 
   Select;
-    When (Funkey = F03);
+    When (Funkey = F03 or Funkey = F12);
       Exit = *On;
     When (Funkey = ENTER);
       HandleInputs();

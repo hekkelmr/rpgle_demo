@@ -1,5 +1,14 @@
 [
   {
+    "name": "Deploy an BOB build 🔨",
+    "command": "/QOpenSys/pkgs/bin/makei build OPTS=*EVENTF",
+    "deployFirst": true,
+    "environment": "pase",
+    "extensions": [
+      "GLOBAL"
+    ]
+  },
+  {
     "name": "Deploy an build 🔨",
     "command": "/QOpenSys/pkgs/bin/gmake BIN_LIB=&CURLIB OPTS=*EVENTF",
     "deployFirst": true,
