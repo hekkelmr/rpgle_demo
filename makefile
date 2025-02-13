@@ -3,7 +3,8 @@ BIN_LIB=CMPSYS
 LIBLIST=$(BIN_LIB)
 SHELL=/QOpenSys/usr/bin/qsh
 
-all: depts.pgm.sqlrpgle employees.pgm.sqlrpgle
+all: depts.pgm.sqlrpgle employees.pgm.sqlrpgle testsfl.pgm.rpgle
+test: testsfl.pgm.rpgle
 
 ## Targets
 
@@ -15,7 +16,12 @@ employees.pgm.sqlrpgle: emps.dspf employee.table
 %.pgm.sqlrpgle: qrpglesrc/%.pgm.sqlrpgle
 	system -s "CHGATR OBJ('$<') ATR(*CCSID) VALUE(1252)"
 	liblist -a $(LIBLIST);\
-	system "CRTSQLRPGI OBJ($(BIN_LIB)/$*) SRCSTMF('$<') COMMIT(*NONE) DBGVIEW(*SOURCE) OPTION(*EVENTF) COMPILEOPT('INCDIR(''qrpgleref'')')"
+	system "CRTSQLRPGI OBJ($(BIN_LIB)/$*) SRCSTMF('$<') COMMIT(*NONE) DBGVIEW(*SOURCE) OPTION(*EVENTF) COMPILEOPT('INCDIR(''qrpgref'')')"
+
+%.pgm.rpgle: qrpglesrc/%.pgm.rpgle
+	system -s "CHGATR OBJ('$<') ATR(*CCSID) VALUE(1252)"
+	liblist -a $(LIBLIST);\
+	system "CRTBNDRPG PGM($(BIN_LIB)/$*) SRCSTMF('$<') DBGVIEW(*SOURCE) OPTION(*EVENTF)"
 
 %.dspf:
 	-system -qi "CRTSRCPF FILE($(BIN_LIB)/QDDSSRC) RCDLEN(112)"

@@ -2,17 +2,13 @@
 
 Ctl-Opt DFTACTGRP(*no);
 
+/include 'constants.rpgleinc'
+
 Dcl-Pr Employees ExtPgm;
   DepartmentNumber Char(3);
 End-Pr;
 
-       //---------------------------------------------------------------*
-
-/include 'qrpgref/constants.rpgleinc'
-
-
-       //---------------------------------------------------------------*
-Dcl-F depts WORKSTN Sfile(SFLDta:Rrn) IndDS(WkStnInd) InfDS(fileinfo);
+Dcl-F depts WORKSTN Sfile(SFLDTA:Rrn) IndDS(WkStnInd) InfDS(FILEINFO);
 
 Dcl-S Exit Ind Inz(*Off);
 
@@ -51,7 +47,7 @@ End-Ds;
 
           
 
-//------------------------------------------------------------
+// ------------------------------------------------------------
 Exit = *Off;
 LoadSubfile();
 
@@ -71,7 +67,7 @@ Enddo;
 Return;
 
 
-//------------------------------------------------------------
+// ------------------------------------------------------------
 Dcl-Proc ClearSubfile;
   SflDspCtl = *Off;
   SflDsp = *Off;
@@ -80,15 +76,12 @@ Dcl-Proc ClearSubfile;
 
   SflDspCtl = *On;
 
-  rrn = 0;
+  Rrn = 0;
 End-Proc;
 
-//------------------------------------------------------------
+// ------------------------------------------------------------
 Dcl-Proc LoadSubfile;
-  Dcl-S lCount  Int(5);
-  Dcl-S Action  Char(1);
-  Dcl-S LongAct Char(3);
-  dcl-c sql_ok '00000';
+  dcl-c SQL_OK '00000';
 
   ClearSubfile();
 
@@ -99,18 +92,18 @@ Dcl-Proc LoadSubfile;
 
   EXEC SQL OPEN deptCur;
 
-  if (sqlstate = sql_ok);
+  if (sqlstate = SQL_OK);
 
-    dou (sqlstate <> sql_ok);
+    dou (sqlstate <> SQL_OK);
       EXEC SQL
         FETCH NEXT FROM deptCur
         INTO :Department.DEPTNO, :Department.DEPTNAME;
 
-      if (sqlstate = sql_ok);
+      if (sqlstate = SQL_OK);
         XID   = Department.DEPTNO;
         XNAME = Department.DEPTNAME;
 
-        rrn += 1;
+        Rrn += 1;
         Write SFLDTA;
       endif;
     enddo;
@@ -119,14 +112,14 @@ Dcl-Proc LoadSubfile;
 
   EXEC SQL CLOSE deptCur;
 
-  If (rrn > 0);
+  If (Rrn > 0);
     SflDsp = *On;
     SFLRRN = 1;
   Endif;
 
 End-Proc;
 
-//------------------------------------------------------------
+// ------------------------------------------------------------
 Dcl-Proc HandleInputs;
   Dcl-S SelVal Char(1);
 
@@ -140,14 +133,13 @@ Dcl-Proc HandleInputs;
 
     Select;
       When (SelVal = '5');
-                  //DSPLY @XID;
         Employees(XID);
     Endsl;
 
     If (XSEL <> *Blank);
       XSEL = *Blank;
       Update SFLDTA;
-      SFLRRN = rrn;
+      SFLRRN = Rrn;
     Endif;
   Enddo;
 End-Proc;

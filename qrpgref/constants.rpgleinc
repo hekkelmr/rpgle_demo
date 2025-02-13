@@ -24,3 +24,5 @@
         Dcl-C ENTER      X'F1';
         Dcl-C HELP       X'F3';
         Dcl-C PRINT      X'F6';
+        dcl-c true       *on;
+        dcl-c false      *off;

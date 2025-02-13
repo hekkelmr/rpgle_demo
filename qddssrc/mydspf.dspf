@@ -1,0 +1,15 @@
+     A*%%TS  SD  20250116  144932  HEKKR400    REL-V7R5M0  5770-WDS   
+     A*%%EC                                                           
+     A                                      DSPSIZ(24 80 *DS3)        
+     A                                      CA03(03)                  
+                R SFL1                      SFL                       
+                  EMPID          5S 0O  5  2                          
+                  EMPNAME       50A  O  5 10                          
+                                                                      
+                R SFLCTL                    SFLCTL(SFL1)              
+                                            SFLSIZ(1000)              
+                                            SFLPAG(10)                
+        40                                  SFLCLR                    
+        41                                  SFLDSP                    
+        42                                  SFLDSPCTL                 
+        45                                  SFLEND(*MORE)             
