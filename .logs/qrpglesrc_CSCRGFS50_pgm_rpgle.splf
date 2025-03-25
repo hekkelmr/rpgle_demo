@@ -1,0 +1,965 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+CPC2198: Current library changed to HEKKR4001.
+CPC2196: Library HEKKR4001 added to library list.
+CPC2196: Library YAJL added to library list.
+
+>> executing command: CRTBNDRPG srcstmf('/home/HEKKR400/builds/rpgle_demo/qrpglesrc/CSCRGFS50.pgm.rpgle') PGM(HEKKR4001/CSCRGFS50) TGTCCSID(*JOB) DBGVIEW(*ALL) OPTION(*EVENTF) TEXT('') INCDIR('includes' 'QPROTOSRC' 'qrpgleref')
+sed: The label :a;N;$!ba;s/\n/ /g is greater than eight characters.
+>> liblist: 
+>> executing time: 2025-03-18-09.35.31.00
+
+RNS9308: Compilation stopped. Severity 40 errors found in program.
+RNS9310: Compilation failed. Program CSCRGFS50 not created in library HEKKR4001.
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page      1
+  Command  . . . . . . . . . . . . :   CRTBNDRPG
+    Issued by  . . . . . . . . . . :     HEKKR400
+  Program  . . . . . . . . . . . . :   CSCRGFS50
+    Library  . . . . . . . . . . . :     HEKKR4001
+  Text 'description' . . . . . . . :
+  Source stream file   . . . . . . :   /home/HEKKR400/builds/rpgle_demo/qrpglesrc/CSCRGFS
+                                       50.pgm.rpgle
+    CCSID  . . . . . . . . . . . . :     1208
+  Target CCSID . . . . . . . . . . :   *JOB (273)
+  Text 'description' . . . . . . . :
+  Last Change  . . . . . . . . . . :   03/18/25  09:34:20
+  Generation severity level  . . . :   10
+  Default activation group . . . . :   *YES
+  Compiler options . . . . . . . . :   *XREF      *GEN       *NOSECLVL  *SHOWCPY
+                                       *EXPDDS    *EXT       *NOSHOWSKP *NOSRCSTMT
+                                       *DEBUGIO   *UNREF     *EVENTF
+  Debugging views  . . . . . . . . :   *ALL
+  Debug encryption key . . . . . . :   *NONE
+  Output . . . . . . . . . . . . . :   *PRINT
+  Optimization level . . . . . . . :   *NONE
+  Source listing indentation . . . :   *NONE
+  Type conversion options  . . . . :   *NONE
+  Sort sequence  . . . . . . . . . :   *HEX
+  Language identifier  . . . . . . :   *JOBRUN
+  Replace program  . . . . . . . . :   *YES
+  User profile . . . . . . . . . . :   *USER
+  Authority  . . . . . . . . . . . :   *LIBCRTAUT
+  Truncate numeric . . . . . . . . :   *YES
+  Fix numeric  . . . . . . . . . . :   *NONE
+  Target release . . . . . . . . . :   *CURRENT
+  Allow null values  . . . . . . . :   *NO
+  Define condition names . . . . . :   *NONE
+  Enable performance collection  . :   *PEP
+  Profiling data . . . . . . . . . :   *NOCOL
+  Licensed Internal Code options . :
+  Generate program interface . . . :   *NO
+  Include directory  . . . . . . . :   includes
+                                   :   QPROTOSRC
+                                   :   qrpgleref
+  Preprocessor options . . . . . . :   *NONE
+  Require prototype for export . . :   *NO
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page      2
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+                          S o u r c e   L i s t i n g
+     1 **FREE                                                                                                               000001
+     2 //H DatEdit(*YMD)                                                                                                    000002
+     3 // ******************************************************************                                                000003
+     4 // -Programmanaam : CSCRGFS50                                                                                        000004
+     5 // -Doel          : Verwerken invoerbestand zacht regres Diba SAP                                                    000005
+     6 // -Bolnr         : 16000M                                                                                           000006
+     7 // -Programmeur   : Paul Adema                                                                                       000007
+     8 // -Datum         : November 2012                                                                                    000008
+     9 // -Wijzigingen   :                                                                                                  000009
+    10 //                                                                                                                   000010
+    11 // Datum     Door        Bolnr  Omschrijving                                                                         000011
+    12 // 20130304  Paul Adema  16000M Interface Diba bestand gewijzigd                                                     000012
+    13 // 20140203  Joop Gerritsma     IM11000099315 'lege'  batch verbetering                                              000013
+    14 // 20200207  Jan  Bijlsma       BBAN IBAN     extra veld IBAN                                                        000014
+    15 // ******************************************************************  ***                                           000015
+    16 // Invoer bestand                                                                                                    000016
+    17 Dcl-F ceiDibPf  Usage(*Input)                                                                                        000017
+    18                 Keyed                                                                                                000018
+    19                 rename(reiDib:reiDibPf);                                                                             000019
+*RNF2120 40     17 000017  External descriptions for file CEIDIBPF not found; file is
+                           ignored.
+    20                                                                                                                      000020
+    21 // Uitvoer bestand                                                                                                   000021
+    22 Dcl-F cscFs50Pf Usage(*Input:*Output)                                                                                000022
+    23                 Keyed                                                                                                000023
+    24                 rename(rscFs50:rFs50Pf);                                                                             000024
+*RNF2120 40     22 000022  External descriptions for file CSCFS50PF not found; file is
+                           ignored.
+    25                                                                                                                      000025
+    26 /copy *libl/cscRpgCpy,cscrgfs50                                                                                      000026
+======>      aaaaaaaaaaaaaaaaaaaaaaaaa
+*RNF0273 40 a      000026  Compiler not able to open the /COPY or /INCLUDE file;
+                           directive ignored.
+    27 /copy *libl/jzzRpgCpy,jzzrg004                                                                                       000027
+======>      aaaaaaaaaaaaaaaaaaaaaaaa
+*RNF0273 40 a      000027  Compiler not able to open the /COPY or /INCLUDE file;
+                           directive ignored.
+    28                                                                                                                      000028
+    29 Dcl-C HLPDIGITS     CONST('0123456789');                                                                             000029
+    30 Dcl-C HLPNEGATIVE   CONST('}JKLMNOPQR');                                                                             000030
+    31 Dcl-C HLPPOSITIVE   CONST('{ABCDEFGHI');                                                                             000031
+    32 Dcl-S hlpBedragA    Char(13);                                                                                        000032
+    33 Dcl-S hlpBedragN    Zoned(13:0);                                                                                     000033
+    34 Dcl-S hlpPos        Zoned(2:0);                                                                                      000034
+    35                                                                                                                      000035
+    36 // ---------------------------------------------------*                                                              000036
+    37 // Record Types                                       *                                                              000037
+    38 // ---------------------------------------------------*                                                              000038
+    39 Dcl-DS f50Vld00;                                                                                                     000039
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page      3
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+    40   recTyp00       Char(2)    Pos(1);                                                                                  000040
+    41   vlgNmr00       Char(3)    Pos(19);                                                                                 000041
+    42 End-DS;                                                                                                              000042
+    43                                                                                                                      000043
+    44 Dcl-DS f50Vld01 qualified;                                                                                           000044
+    45   recTyp01       Char(2)    Pos(1);                                                                                  000045
+    46   rekNmr01       Char(10)   Pos(3);                                                                                  000046
+    47   dafVnr01       Char(4)    Pos(13);                                                                                 000047
+    48   mutVnr01       Char(10)   Pos(17);                                                                                 000048
+    49   tegRek01       Char(10)   Pos(27);                                                                                 000049
+    50   tegRhd01       Char(24)   Pos(37);                                                                                 000050
+    51   herCde01       Char(5)    Pos(61);                                                                                 000051
+    52   datBkn01       Char(8)    Pos(66);                                                                                 000052
+    53   datVal01       Char(8)    Pos(74);                                                                                 000053
+    54   datTrs01       Char(8)    Pos(82);                                                                                 000054
+    55   betKen01       Char(16)   Pos(90);                                                                                 000055
+    56   nvrGeg01       Char(29)   Pos(106);                                                                                000056
+    57   omSchr01       Char(256)  Pos(135);                                                                                000057
+    58   bedrag01       Char(13)   Pos(391);                                                                                000058
+    59   inddcr01       Char(1)    Pos(404);                                                                                000059
+    60   cdeVal01       Char(3)    Pos(405);                                                                                000060
+    61   mutTyp01       Char(5)    Pos(408);                                                                                000061
+    62   usrIdd01       Char(5)    Pos(413);                                                                                000062
+    63   mutSrt01       Char(5)    Pos(418);                                                                                000063
+    64   pcdTrk01       Char(6)    Pos(423);                                                                                000064
+    65   mutNro01       Char(10)   Pos(429);                                                                                000065
+    66   infAnv01       Char(30)   Pos(439);                                                                                000066
+    67   trsDat01       Char(8)    Pos(469);                                                                                000067
+    68   trsTyd01       Char(5)    Pos(477);                                                                                000068
+    69   srtSlt01       Char(1)    Pos(482);                                                                                000069
+    70   hrkSlt01       Char(20)   Pos(483);                                                                                000070
+    71   IBAN01         Char(34)   Pos(503);                                                                                000071
+    72   resOpv01       Char(11)   Pos(537);                                                                                000072
+    73 End-DS;                                                                                                              000073
+    74                                                                                                                      000074
+    75 // ---------------------------------------------------*                                                              000075
+    76 // Hulpvelden                                        *                                                               000076
+    77 // ---------------------------------------------------*                                                              000077
+    78 Dcl-S @hlpVlgNmr   Packed(3:0);                                                                                      000078
+======>      aaaaaaaaaaaaaaa
+======>       bbbbbbbbb
+*RNF3301 30 a      000078  The Name entry is not valid; specification ignored.
+*RNF3308 20 b      000078  Keyword name is not valid; the keyword is ignored.
+    79 Dcl-S @dtaVlgNmr   Packed(3:0);                                                                                      000079
+======>      aaaaaaaaaaaaaaa
+======>       bbbbbbbbb
+*RNF3301 30 a      000079  The Name entry is not valid; specification ignored.
+*RNF3308 20 b      000079  Keyword name is not valid; the keyword is ignored.
+    80 Dcl-S @hlpRecTel   Packed(5:0);                                                                                      000080
+======>      aaaaaaaaaaaaaaa
+======>       bbbbbbbbb
+*RNF3301 30 a      000080  The Name entry is not valid; specification ignored.
+*RNF3308 20 b      000080  Keyword name is not valid; the keyword is ignored.
+    81 Dcl-S @hlpDatIn    Zoned(8:0);                                                                                       000081
+======>      aaaaaaaaaaaaaaa
+======>       bbbbbbbb
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page      4
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+*RNF3301 30 a      000081  The Name entry is not valid; specification ignored.
+*RNF3308 20 b      000081  Keyword name is not valid; the keyword is ignored.
+    82                                                                                                                      000082
+    83 // ***********************************************************************                                           000083
+    84 // entry procedure definitie                                                                                         000084
+    85 // ***********************************************************************                                           000085
+    86 Dcl-PI cscrgfs50_Pgm;                                                                                                000086
+======>       aaaaaaaaaaaaa
+*RNF3573 30 a      000086  A parameter is required for the EXTPGM keyword when the
+                           procedure name is longer than 10.
+    87   @intVlgNrOud   Char(3);                                                                                            000087
+======>      aaaaaaaaaaaaaaa
+======>   bbbbbbbbbbb
+*RNF3301 30 a      000087  The Name entry is not valid; specification ignored.
+*RNF3308 20 b      000087  Keyword name is not valid; the keyword is ignored.
+    88   @intVlgNrNw    Char(3);                                                                                            000088
+======>      aaaaaaaaaaaaaaa
+======>   bbbbbbbbbb
+*RNF3301 30 a      000088  The Name entry is not valid; specification ignored.
+*RNF3308 20 b      000088  Keyword name is not valid; the keyword is ignored.
+    89   @intFoutCd     Char(2);                                                                                            000089
+======>      aaaaaaaaaaaaaaa
+======>   bbbbbbbbb
+*RNF3301 30 a      000089  The Name entry is not valid; specification ignored.
+*RNF3308 20 b      000089  Keyword name is not valid; the keyword is ignored.
+    90 End-PI;                                                                                                              000090
+    91                                                                                                                      000091
+    92 //  =====================================================================                                            000092
+    93                                                                                                                      000093
+    94 initialisatie(f50Vld00:recTyp00:@dtaVlgNmr:@intVlgNrOud:vlgNmr00:@hlpVlgNmr:@intFoutCd:@intVlgNrNw);                 000094
+======>                                a          b                     c          d          e
+*RNF0604 20 a      000094  The token is not valid; token is ignored.
+*RNF0604 20 b      000094  The token is not valid; token is ignored.
+*RNF0604 20 c      000094  The token is not valid; token is ignored.
+*RNF0604 20 d      000094  The token is not valid; token is ignored.
+*RNF0604 20 e      000094  The token is not valid; token is ignored.
+    95 if (@intFoutCd = '00');                                                                              B01             000095
+======>    a
+*RNF0604 20 a      000095  The token is not valid; token is ignored.
+    96   verwerking(f50Vld01:recTyp01:@hlpRecTel);                                                           01             000096
+======>                               a
+*RNF0604 20 a      000096  The token is not valid; token is ignored.
+    97 endif;                                                                                               E01             000097
+    98 *inLr = *on;                                                                                                         000098
+    99 return;                                                                                                              000099
+   100                                                                                                                      000100
+   101                                                                                                                      000101
+   102 // ======================================================================                                            000102
+   103 // Controle volgnumer zacht regres                                                                                   000103
+   104 // =================================================================                                                 000104
+   105 // 1 - Bepaal volgnummer uit het eerste record van Ceidibpf(type 00)                                                 000105
+   106 // 2 - Bepaal hlpnummer = volgnummer (uit ceidibpf) - 1                                                              000106
+   107 // 3 - Vanuit DTAARA CSCDTVZR wordt volgnummer oud bepaald in CLP                                                    000107
+   108 //     programma CSCCLFS50.(input parameter in dit programma)                                                        000108
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page      5
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+   109 // 4 - Hlpnummer moet gelijk zijn @intVlgNrOud uit DTAARA CSCDTVZR                                                   000109
+   110 // ==================================================================                                                000110
+   111 Dcl-Proc initialisatie;                                                                                              000111
+======>         aaaaaaaaaaaaa
+*RNF1520 20 a      000111  The procedure cannot be defined with DFTACTGRP(*YES).
+   112   Dcl-Pi *N;                                                                                                         000112
+   113     pf50Vld00 LikeDS(f50Vld00);                                                                                      000113
+   114     precTyp00 Like(recTyp00);                                                                                        000114
+   115     p@dtaVlgNmr Like(@dtaVlgNmr);                                                                                    000115
+======>     abbbbbbbbb      cddddddddde
+*RNF3308 20 a      000115  Keyword name is not valid; the keyword is ignored.
+*RNF3308 20 b      000115  Keyword name is not valid; the keyword is ignored.
+*RNF3436 20 c      000115  The parameter for keyword LIKE is not valid; keyword is
+                           ignored.
+*RNF0607 00 d      000115  Text is skipped to recover from the previous error.
+*RNF0633 20 e      000115  An unexpected right parenthesis was encountered; right
+                           parenthesis is ignored.
+   116     p@intVlgNrOud Like(@intVlgNrOud);                                                                                000116
+======>    abccccccccccc      deeeeeeeeeeef
+*RNF3316 30 a      000116  The item has already been defined on a Definition
+                           Specification; specification is ignored.
+*RNF3308 20 b      000116  Keyword name is not valid; the keyword is ignored.
+*RNF3308 20 c      000116  Keyword name is not valid; the keyword is ignored.
+*RNF3436 20 d      000116  The parameter for keyword LIKE is not valid; keyword is
+                           ignored.
+*RNF0607 00 e      000116  Text is skipped to recover from the previous error.
+*RNF0633 20 f      000116  An unexpected right parenthesis was encountered; right
+                           parenthesis is ignored.
+   117     pvlgNmr00 Like(vlgNmr00);                                                                                        000117
+   118     p@hlpVlgNmr Like(@hlpVlgNmr);                                                                                    000118
+======>    abccccccccc      deeeeeeeeef
+*RNF3316 30 a      000118  The item has already been defined on a Definition
+                           Specification; specification is ignored.
+*RNF3308 20 b      000118  Keyword name is not valid; the keyword is ignored.
+*RNF3308 20 c      000118  Keyword name is not valid; the keyword is ignored.
+*RNF3436 20 d      000118  The parameter for keyword LIKE is not valid; keyword is
+                           ignored.
+*RNF0607 00 e      000118  Text is skipped to recover from the previous error.
+*RNF0633 20 f      000118  An unexpected right parenthesis was encountered; right
+                           parenthesis is ignored.
+   119     p@intFoutCd Like(@intFoutCd);                                                                                    000119
+======>    abccccccccc      deeeeeeeeef
+*RNF3316 30 a      000119  The item has already been defined on a Definition
+                           Specification; specification is ignored.
+*RNF3308 20 b      000119  Keyword name is not valid; the keyword is ignored.
+*RNF3308 20 c      000119  Keyword name is not valid; the keyword is ignored.
+*RNF3436 20 d      000119  The parameter for keyword LIKE is not valid; keyword is
+                           ignored.
+*RNF0607 00 e      000119  Text is skipped to recover from the previous error.
+*RNF0633 20 f      000119  An unexpected right parenthesis was encountered; right
+                           parenthesis is ignored.
+   120     p@intVlgNrNw Like(@intVlgNrNw);                                                                                  000120
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page      6
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+======>    abcccccccccc      deeeeeeeeeef
+*RNF3316 30 a      000120  The item has already been defined on a Definition
+                           Specification; specification is ignored.
+*RNF3308 20 b      000120  Keyword name is not valid; the keyword is ignored.
+*RNF3308 20 c      000120  Keyword name is not valid; the keyword is ignored.
+*RNF3436 20 d      000120  The parameter for keyword LIKE is not valid; keyword is
+                           ignored.
+*RNF0607 00 e      000120  Text is skipped to recover from the previous error.
+*RNF0633 20 f      000120  An unexpected right parenthesis was encountered; right
+                           parenthesis is ignored.
+   121   End-Pi;                                                                                                            000121
+   122                                                                                                                      000122
+   123   read  reiDibPf;                                                                                                    000123
+   124   if (not %eof);                                                                                     B01             000124
+   125     pf50Vld00       = dibText;                                                                        01             000125
+   126     if (precTyp00    = '00');                                                                        B02             000126
+   127       p@dtaVlgNmr   =  %dec(p@intVlgNrOud:3:0);                                                       02             000127
+======>       abbbbbbbbb
+*RNF0604 20 a      000127  The token is not valid; token is ignored.
+*RNF5347 30 b      000127  An assignment operator is expected with the EVAL operation.
+   128                                                                                                                      000128
+   129       // Bepalen vorig volgnr. Max volgnr is 999!                                                                    000129
+   130       if (%dec(pvlgNmr00:3:0) = 1);                                                                  B03             000130
+   131         // Volgnr is over de kop gegaan                                                                              000131
+   132         p@hlpVlgNmr = 999;                                                                            03             000132
+======>         abbbbbbbbb
+*RNF0604 20 a      000132  The token is not valid; token is ignored.
+*RNF5347 30 b      000132  An assignment operator is expected with the EVAL operation.
+   133       else;                                                                                          X03             000133
+   134         // Volgnr is huidige volgnr - 1                                                                              000134
+   135         p@hlpVlgNmr = (%dec(pvlgNmr00:3:0) - 1);                                                      03             000135
+======>         abbbbbbbbb
+*RNF0604 20 a      000135  The token is not valid; token is ignored.
+*RNF5347 30 b      000135  An assignment operator is expected with the EVAL operation.
+   136       endif;                                                                                         E03             000136
+   137                                                                                                                      000137
+   138       if (p@hlpVlgNmr <> @dtaVlgNmr1);                                                               B03             000138
+======>           abbbbbbbbb
+======>            ccccccccc
+*RNF0604 20 a      000138  The token is not valid; token is ignored.
+*RNF0312 20 b      000138  A right parenthesis is expected but is not found.
+*RNF5377 20 c      000138  The end of the expression is expected.
+   139         p@intFoutCd = '99';                                                                           03             000139
+======>         abbbbbbbbb
+*RNF0604 20 a      000139  The token is not valid; token is ignored.
+*RNF5347 30 b      000139  An assignment operator is expected with the EVAL operation.
+   140       else;                                                                                          X03             000140
+   141         p@intFoutCd = '00';                                                                           03             000141
+======>         abbbbbbbbb
+*RNF0604 20 a      000141  The token is not valid; token is ignored.
+*RNF5347 30 b      000141  An assignment operator is expected with the EVAL operation.
+   142         // Nieuwe volgnummer wordt terugegeven aan CL programma CSCCLFS50                                            000142
+   143         // en geplaatst in de DTAARA CSCDTVZR                                                                        000143
+   144         p@intVlgNrNw = pvlgNmr00;                                                                     03             000144
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page      7
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+======>         abbbbbbbbbb
+*RNF0604 20 a      000144  The token is not valid; token is ignored.
+*RNF5347 30 b      000144  An assignment operator is expected with the EVAL operation.
+   145       endif;                                                                                         E03             000145
+   146     else;                                                                                            X02             000146
+   147       p@intFoutCd = '99';                                                                             02             000147
+======>       abbbbbbbbb
+*RNF0604 20 a      000147  The token is not valid; token is ignored.
+*RNF5347 30 b      000147  An assignment operator is expected with the EVAL operation.
+   148     endif;                                                                                           E02             000148
+   149   endif;                                                                                             E01             000149
+   150                                                                                                                      000150
+   151                                                                                                                      000151
+   152 End-Proc;                                                                                                            000152
+   153                                                                                                                      000153
+   154 // =================================================================                                                 000154
+   155 // =================================================================                                                 000155
+   156 Dcl-Proc verwerking;                                                                                                 000156
+======>         aaaaaaaaaa
+*RNF1520 20 a      000156  The procedure cannot be defined with DFTACTGRP(*YES).
+   157   Dcl-Pi *N;                                                                                                         000157
+   158     pf50Vld01 LikeDS(f50Vld01);                                                                                      000158
+   159     precTyp01 Like(recTyp01);                                                                                        000159
+   160     p@hlpRecTel Like(@hlpRecTel);                                                                                    000160
+======>     abbbbbbbbb      cddddddddde
+*RNF3308 20 a      000160  Keyword name is not valid; the keyword is ignored.
+*RNF3308 20 b      000160  Keyword name is not valid; the keyword is ignored.
+*RNF3436 20 c      000160  The parameter for keyword LIKE is not valid; keyword is
+                           ignored.
+*RNF0607 00 d      000160  Text is skipped to recover from the previous error.
+*RNF0633 20 e      000160  An unexpected right parenthesis was encountered; right
+                           parenthesis is ignored.
+   161   End-Pi;                                                                                                            000161
+   162                                                                                                                      000162
+   163   // Verwerk alleen recordtypes '01'                                                                                 000163
+   164   read  reiDibPf;                                                                                                    000164
+   165   dow (not %eof);                                                                                    B01             000165
+   166     pf50Vld01 = dibText;                                                                              01             000166
+   167     if (precTyp01 = '01');                                                                           B02             000167
+   168       schrijfZachtRegres(recTyp01:rekNmr01:dafVnr01:mutVnr01:tegRek01:tegRhd01:herCde01:@hlpDatIn:da  02             000168
+======>                                                                                        a
+ ...   tBkn01:datVal01:datTrs01:betKen01:nvrGeg01:omSchr01:hlpBedragA:bedrag01:hlpBedragN:hlpPos:inddcr01:c
+ ...   deVal01:mutTyp01:usrIdd01:mutSrt01:pcdTrk01:mutNro01:infAnv01:trsDat01:trsTyd01:srtSlt01:hrkSlt01:re
+ ...   sOpv01:IBAN01);
+*RNF0604 20 a      000168  The token is not valid; token is ignored.
+   169       p@hlpRecTel = p@hlpRecTel + 1;                                                                  02             000169
+======>       abbbbbbbbb
+*RNF0604 20 a      000169  The token is not valid; token is ignored.
+*RNF5347 30 b      000169  An assignment operator is expected with the EVAL operation.
+   170     endif;                                                                                           E02             000170
+   171     read  reiDibPf;                                                                                   01             000171
+   172   enddo;                                                                                             E01             000172
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page      8
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+   173                                                                                                                      000173
+   174 End-Proc;                                                                                                            000174
+   175                                                                                                                      000175
+   176 // =================================================================                                                 000176
+   177 // =================================================================                                                 000177
+   178 Dcl-Proc schrijfZachtRegres;                                                                                         000178
+======>         aaaaaaaaaaaaaaaaaa
+*RNF1520 20 a      000178  The procedure cannot be defined with DFTACTGRP(*YES).
+   179   Dcl-Pi *N;                                                                                                         000179
+   180     p_recTyp01 Like(recTyp01);                                                                                       000180
+   181     prekNmr01 Like(rekNmr01);                                                                                        000181
+   182     pdafVnr01 Like(dafVnr01);                                                                                        000182
+   183     pmutVnr01 Like(mutVnr01);                                                                                        000183
+   184     ptegRek01 Like(tegRek01);                                                                                        000184
+   185     ptegRhd01 Like(tegRhd01);                                                                                        000185
+   186     pherCde01 Like(herCde01);                                                                                        000186
+   187     p@hlpDatIn Like(@hlpDatIn);                                                                                      000187
+======>     abbbbbbbb      cdddddddde
+*RNF3308 20 a      000187  Keyword name is not valid; the keyword is ignored.
+*RNF3308 20 b      000187  Keyword name is not valid; the keyword is ignored.
+*RNF3436 20 c      000187  The parameter for keyword LIKE is not valid; keyword is
+                           ignored.
+*RNF0607 00 d      000187  Text is skipped to recover from the previous error.
+*RNF0633 20 e      000187  An unexpected right parenthesis was encountered; right
+                           parenthesis is ignored.
+   188     pdatBkn01 Like(datBkn01);                                                                                        000188
+   189     pdatVal01 Like(datVal01);                                                                                        000189
+   190     pdatTrs01 Like(datTrs01);                                                                                        000190
+   191     pbetKen01 Like(betKen01);                                                                                        000191
+   192     pnvrGeg01 Like(nvrGeg01);                                                                                        000192
+   193     pomSchr01 Like(omSchr01);                                                                                        000193
+   194     phlpBedragA Like(hlpBedragA);                                                                                    000194
+   195     pbedrag01 Like(bedrag01);                                                                                        000195
+   196     phlpBedragN Like(hlpBedragN);                                                                                    000196
+   197     phlpPos Like(hlpPos);                                                                                            000197
+   198     pinddcr01 Like(inddcr01);                                                                                        000198
+   199     pcdeVal01 Like(cdeVal01);                                                                                        000199
+   200     pmutTyp01 Like(mutTyp01);                                                                                        000200
+   201     pusrIdd01 Like(usrIdd01);                                                                                        000201
+   202     pmutSrt01 Like(mutSrt01);                                                                                        000202
+   203     ppcdTrk01 Like(pcdTrk01);                                                                                        000203
+   204     pmutNro01 Like(mutNro01);                                                                                        000204
+   205     pinfAnv01 Like(infAnv01);                                                                                        000205
+   206     ptrsDat01 Like(trsDat01);                                                                                        000206
+   207     ptrsTyd01 Like(trsTyd01);                                                                                        000207
+   208     psrtSlt01 Like(srtSlt01);                                                                                        000208
+   209     phrkSlt01 Like(hrkSlt01);                                                                                        000209
+   210     presOpv01 Like(resOpv01);                                                                                        000210
+   211     pIBAN01 Like(IBAN01);                                                                                            000211
+   212   End-Pi;                                                                                                            000212
+   213                                                                                                                      000213
+   214   clear rfs50Pf;                                                                                                     000214
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page      9
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+   215                                                                                                                      000215
+   216   f50Rectyp = p_recTyp01;             // Record Type                                                                 000216
+   217   f50RekNmr = prekNmr01;             // Rekeningnummer                                                               000217
+   218   f50DafVnr = %dec(pdafVnr01:4:0);   // Dagafschrift volgnummer                                                      000218
+   219   f50MutVnr = pmutVnr01;             // Mutatie volgnummer                                                           000219
+   220   f50TegRek = ptegRek01;             // Tegenrekeningnummer                                                          000220
+   221   f50TegRhd = ptegRhd01;             // Tegenrekeninghouder                                                          000221
+   222   f50HerCde = pherCde01;             // Herkomstcode                                                                 000222
+   223   p@hlpDatIn = %dec(pdatBkn01:8:0);       f50DatBkn = jzzrg004_getDat(p@hlpDatIn); // Boekingdatum                   000223
+======>   abbbbbbbb                              c
+*RNF0604 20 a      000223  The token is not valid; token is ignored.
+*RNF5347 30 b      000223  An assignment operator is expected with the EVAL operation.
+*RNF5508 30 c      000223  End of free-format statement is not blank.
+   224   p@hlpDatIn = %dec(pdatVal01:8:0);                                                                                  000224
+======>   abbbbbbbb
+*RNF0604 20 a      000224  The token is not valid; token is ignored.
+*RNF5347 30 b      000224  An assignment operator is expected with the EVAL operation.
+   225   f50DatVal = jzzrg004_getDat(p@hlpDatIn); // Valutadatum                                                            000225
+======>                               abbbbbbbb
+======>                                cccccccc
+*RNF0604 20 a      000225  The token is not valid; token is ignored.
+*RNF0312 20 b      000225  A right parenthesis is expected but is not found.
+*RNF5377 20 c      000225  The end of the expression is expected.
+   226   p@hlpDatIn = %dec(pdatTrs01:8:0);                                                                                  000226
+======>   abbbbbbbb
+*RNF0604 20 a      000226  The token is not valid; token is ignored.
+*RNF5347 30 b      000226  An assignment operator is expected with the EVAL operation.
+   227   f50DatTrs = jzzrg004_getDat(p@hlpDatIn); // Transactiedatum                                                        000227
+======>                               abbbbbbbb
+======>                                cccccccc
+*RNF0604 20 a      000227  The token is not valid; token is ignored.
+*RNF0312 20 b      000227  A right parenthesis is expected but is not found.
+*RNF5377 20 c      000227  The end of the expression is expected.
+   228   f50BetKen = pbetKen01;             // Kenmerk                                                                      000228
+   229   f50NvrGeg = pnvrGeg01;             // Navraaggegevens                                                              000229
+   230   f50Omschr = pomSchr01;             // Omschrijving                                                                 000230
+   231   // Omzetten bedrag                                                                                                 000231
+   232   omzettenBedragVeld(phlpBedragA:pbedrag01:phlpBedragN:phlpPos);                                                     000232
+   233   f50Bedrag = phlpBedragN;           // Bedrag                                                                       000233
+   234   f50IndDcr = pinddcr01;             // Indicatie Debet/Credit                                                       000234
+   235   f50CdeVal = pcdeVal01;             // Valutacode                                                                   000235
+   236   f50MutTyp = pmutTyp01;             // Mutatietype                                                                  000236
+   237   f50UsrIdd = %dec(pusrIdd01:5:0);   // GebruikerID                                                                  000237
+   238   f50MutSrt = pmutSrt01;             // Mutatiesoortcode                                                             000238
+   239   f50PcdTrk = ppcdTrk01;             // Postcode tegenrekening                                                       000239
+   240   f50MutNro = pmutNro01;             // Mutatievnr oorspronkelijk                                                    000240
+   241   f50InfAnv = pinfAnv01;             // Informatie aanvullend                                                        000241
+   242   p@hlpDatIn = %dec(ptrsDat01:8:0);                                                                                  000242
+======>   abbbbbbbb
+*RNF0604 20 a      000242  The token is not valid; token is ignored.
+*RNF5347 30 b      000242  An assignment operator is expected with the EVAL operation.
+   243   f50TrsDat = jzzrg004_getDat(p@hlpDatIn); // Transactiedatum                                                        000243
+======>                               abbbbbbbb
+======>                                cccccccc
+*RNF0604 20 a      000243  The token is not valid; token is ignored.
+*RNF0312 20 b      000243  A right parenthesis is expected but is not found.
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     10
+Line   <---------------------- Source Specifications ----------------------------------------------------->  Do  Change Src Seq
+Number ....+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....8....+....9....+...10  Num Date   Id  Number
+*RNF5377 20 c      000243  The end of the expression is expected.
+   244   f50TrsTyd = ptrsTyd01;             // Transactietijd                                                               000244
+   245   f50SrtSlt = psrtSlt01;             // Soort sleutel                                                                000245
+   246   f50HrkSlt = phrkSlt01;             // Herkende sleutel                                                             000246
+   247   f50ResOpv = presOpv01;             // Opvulling                                                                    000247
+   248   f50IBAN   = pIBAN01;               // IBAN                                                                         000248
+   249                                                                                                                      000249
+   250   write rFs50Pf;                                                                                                     000250
+   251                                                                                                                      000251
+   252 End-Proc;                                                                                                            000252
+   253                                                                                                                      000253
+   254 // =================================================================                                                 000254
+   255 Dcl-Proc omzettenBedragVeld;                                                                                         000255
+======>         aaaaaaaaaaaaaaaaaa
+*RNF1520 20 a      000255  The procedure cannot be defined with DFTACTGRP(*YES).
+   256   Dcl-Pi *N;                                                                                                         000256
+   257     phlpBedragA Like(hlpBedragA);                                                                                    000257
+   258     pbedrag01 Like(bedrag01);                                                                                        000258
+   259     phlpBedragN Like(hlpBedragN);                                                                                    000259
+   260     phlpPos Like(hlpPos);                                                                                            000260
+   261   End-Pi;                                                                                                            000261
+   262                                                                                                                      000262
+   263   phlpBedragA   = pbedrag01;                                                                                         000263
+   264   phlpBedragN   = 0;                                                                                                 000264
+   265   phlpPos       = 0;                                                                                                 000265
+   266   phlpPos = %scan(%subst(phlpBedragA:13:1):HLPNEGATIVE);                                                             000266
+   267   if (phlpPos <> 0);                                                                                 B01             000267
+   268     %subst(phlpBedragA:13:1) = %xlate(HLPNEGATIVE:HLPDIGITS:                                          01             000268
+   269                                    %subst(phlpBedragA:13:1));                                         01             000269
+   270     phlpBedragN = %dec(phlpBedragA:13:0);                                                             01             000270
+   271     return;                                                                                           01             000271
+   272   endif;                                                                                             E01             000272
+   273                                                                                                                      000273
+   274   phlpPos = %scan(%subst(phlpBedragA:13:1):HLPPOSITIVE);                                                             000274
+   275   if (phlpPos <> 0);                                                                                 B01             000275
+   276     %subst(phlpBedragA:13:1) = %xlate(HLPPOSITIVE:HLPDIGITS:                                          01             000276
+   277                                    %subst(phlpBedragA:13:1));                                         01             000277
+   278     phlpBedragN = %dec(phlpBedragA:13:0);                                                             01             000278
+   279     return;                                                                                           01             000279
+   280   endif;                                                                                             E01             000280
+   281                                                                                                                      000281
+   282   phlpBedragN = %dec(phlpBedragA:13:0);                                                                              000282
+   283                                                                                                                      000283
+   284 End-Proc;                                                                                                            000284
+       * * * * *   E N D   O F   S O U R C E   * * * * *
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     11
+          A d d i t i o n a l   D i a g n o s t i c   M e s s a g e s
+ Msg id  Sv Number Seq     Message text
+*RNF7030 30    168 000168  The name or indicator BEDRAG01 is not defined.
+*RNF7030 30    168 000168  The name or indicator BETKEN01 is not defined.
+*RNF7030 30    168 000168  The name or indicator CDEVAL01 is not defined.
+*RNF7030 30    168 000168  The name or indicator DAFVNR01 is not defined.
+*RNF7030 30    168 000168  The name or indicator DATBKN01 is not defined.
+*RNF7030 30    168 000168  The name or indicator DATTRS01 is not defined.
+*RNF7030 30    168 000168  The name or indicator DATVAL01 is not defined.
+*RNF7030 30    125 000125  The name or indicator DIBTEXT is not defined.
+*RNF7030 30     94 000094  The name or indicator DTAVLGNMR is not defined.
+*RNF7030 30    233 000233  The name or indicator F50BEDRAG is not defined.
+*RNF7030 30    228 000228  The name or indicator F50BETKEN is not defined.
+*RNF7030 30    235 000235  The name or indicator F50CDEVAL is not defined.
+*RNF7030 30    218 000218  The name or indicator F50DAFVNR is not defined.
+*RNF7030 30    227 000227  The name or indicator F50DATTRS is not defined.
+*RNF7030 30    225 000225  The name or indicator F50DATVAL is not defined.
+*RNF7030 30    222 000222  The name or indicator F50HERCDE is not defined.
+*RNF7030 30    246 000246  The name or indicator F50HRKSLT is not defined.
+*RNF7030 30    248 000248  The name or indicator F50IBAN is not defined.
+*RNF7030 30    234 000234  The name or indicator F50INDDCR is not defined.
+*RNF7030 30    241 000241  The name or indicator F50INFANV is not defined.
+*RNF7030 30    240 000240  The name or indicator F50MUTNRO is not defined.
+*RNF7030 30    238 000238  The name or indicator F50MUTSRT is not defined.
+*RNF7030 30    236 000236  The name or indicator F50MUTTYP is not defined.
+*RNF7030 30    219 000219  The name or indicator F50MUTVNR is not defined.
+*RNF7030 30    229 000229  The name or indicator F50NVRGEG is not defined.
+*RNF7030 30    230 000230  The name or indicator F50OMSCHR is not defined.
+*RNF7030 30    239 000239  The name or indicator F50PCDTRK is not defined.
+*RNF7030 30    216 000216  The name or indicator F50RECTYP is not defined.
+*RNF7030 30    217 000217  The name or indicator F50REKNMR is not defined.
+*RNF7030 30    247 000247  The name or indicator F50RESOPV is not defined.
+*RNF7030 30    245 000245  The name or indicator F50SRTSLT is not defined.
+*RNF7030 30    220 000220  The name or indicator F50TEGREK is not defined.
+*RNF7030 30    221 000221  The name or indicator F50TEGRHD is not defined.
+*RNF7030 30    243 000243  The name or indicator F50TRSDAT is not defined.
+*RNF7030 30    244 000244  The name or indicator F50TRSTYD is not defined.
+*RNF7030 30    237 000237  The name or indicator F50USRIDD is not defined.
+*RNF7030 30    168 000168  The name or indicator HERCDE01 is not defined.
+*RNF7030 30    168 000168  The name or indicator HLPDATIN is not defined.
+*RNF7030 30     96 000096  The name or indicator HLPRECTEL is not defined.
+*RNF7030 30     94 000094  The name or indicator HLPVLGNMR is not defined.
+*RNF7030 30    168 000168  The name or indicator HRKSLT01 is not defined.
+*RNF7030 30    168 000168  The name or indicator IBAN01 is not defined.
+*RNF7030 30    168 000168  The name or indicator INDDCR01 is not defined.
+*RNF7030 30    168 000168  The name or indicator INFANV01 is not defined.
+*RNF7030 30     94 000094  The name or indicator INTFOUTCD is not defined.
+*RNF7030 30     94 000094  The name or indicator INTVLGNRNW is not defined.
+*RNF7030 30     94 000094  The name or indicator INTVLGN... is not defined.
+*RNF7030 30    225 000225  The name or indicator JZZRG00... is not defined.
+*RNF7030 30    168 000168  The name or indicator MUTNRO01 is not defined.
+*RNF7030 30    168 000168  The name or indicator MUTSRT01 is not defined.
+*RNF7030 30    168 000168  The name or indicator MUTTYP01 is not defined.
+*RNF7030 30    168 000168  The name or indicator MUTVNR01 is not defined.
+*RNF7030 30    168 000168  The name or indicator NVRGEG01 is not defined.
+*RNF7030 30    168 000168  The name or indicator OMSCHR01 is not defined.
+*RNF7030 30    115 000115  The name or indicator P is not defined.
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     12
+*RNF7030 30    160 000160  The name or indicator P is not defined.
+*RNF7030 30    187 000187  The name or indicator P is not defined.
+*RNF7030 30    180 000180  The name or indicator P_RECTYP01 is not defined.
+*RNF7030 30    195 000195  The name or indicator PBEDRAG01 is not defined.
+*RNF7030 30    258 000258  The name or indicator PBEDRAG01 is not defined.
+*RNF7030 30    191 000191  The name or indicator PBETKEN01 is not defined.
+*RNF7030 30    199 000199  The name or indicator PCDEVAL01 is not defined.
+*RNF7030 30    168 000168  The name or indicator PCDTRK01 is not defined.
+*RNF7030 30    182 000182  The name or indicator PDAFVNR01 is not defined.
+*RNF7030 30    188 000188  The name or indicator PDATBKN01 is not defined.
+*RNF7030 30    190 000190  The name or indicator PDATTRS01 is not defined.
+*RNF7030 30    189 000189  The name or indicator PDATVAL01 is not defined.
+*RNF7030 30    186 000186  The name or indicator PHERCDE01 is not defined.
+*RNF7030 30    209 000209  The name or indicator PHRKSLT01 is not defined.
+*RNF7030 30    211 000211  The name or indicator PIBAN01 is not defined.
+*RNF7030 30    198 000198  The name or indicator PINDDCR01 is not defined.
+*RNF7030 30    205 000205  The name or indicator PINFANV01 is not defined.
+*RNF7030 30    204 000204  The name or indicator PMUTNRO01 is not defined.
+*RNF7030 30    202 000202  The name or indicator PMUTSRT01 is not defined.
+*RNF7030 30    200 000200  The name or indicator PMUTTYP01 is not defined.
+*RNF7030 30    183 000183  The name or indicator PMUTVNR01 is not defined.
+*RNF7030 30    192 000192  The name or indicator PNVRGEG01 is not defined.
+*RNF7030 30    193 000193  The name or indicator POMSCHR01 is not defined.
+*RNF7030 30    203 000203  The name or indicator PPCDTRK01 is not defined.
+*RNF7030 30    159 000159  The name or indicator PRECTYP01 is not defined.
+*RNF7030 30    181 000181  The name or indicator PREKNMR01 is not defined.
+*RNF7030 30    210 000210  The name or indicator PRESOPV01 is not defined.
+*RNF7030 30    208 000208  The name or indicator PSRTSLT01 is not defined.
+*RNF7030 30    184 000184  The name or indicator PTEGREK01 is not defined.
+*RNF7030 30    185 000185  The name or indicator PTEGRHD01 is not defined.
+*RNF7030 30    206 000206  The name or indicator PTRSDAT01 is not defined.
+*RNF7030 30    207 000207  The name or indicator PTRSTYD01 is not defined.
+*RNF7030 30    201 000201  The name or indicator PUSRIDD01 is not defined.
+*RNF7030 30     96 000096  The name or indicator RECTYP01 is not defined.
+*RNF7030 30    123 000123  The name or indicator REIDIBPF is not defined.
+*RNF7030 30    168 000168  The name or indicator REKNMR01 is not defined.
+*RNF7030 30    168 000168  The name or indicator RESOPV01 is not defined.
+*RNF7030 30    214 000214  The name or indicator RFS50PF is not defined.
+*RNF7030 30    168 000168  The name or indicator SRTSLT01 is not defined.
+*RNF7030 30    168 000168  The name or indicator TEGREK01 is not defined.
+*RNF7030 30    168 000168  The name or indicator TEGRHD01 is not defined.
+*RNF7030 30    168 000168  The name or indicator TRSDAT01 is not defined.
+*RNF7030 30    168 000168  The name or indicator TRSTYD01 is not defined.
+*RNF7030 30    168 000168  The name or indicator USRIDD01 is not defined.
+*RNF7503 30     94 000094  Expression contains an operand that is not defined.
+*RNF5410 30     94 000094  The prototype for the call is not defined.
+*RNF7503 30     95 000095  Expression contains an operand that is not defined.
+*RNF7503 30     96 000096  Expression contains an operand that is not defined.
+*RNF5410 30     96 000096  The prototype for the call is not defined.
+*RNF7503 30    123 000123  Expression contains an operand that is not defined.
+*RNF7503 30    125 000125  Expression contains an operand that is not defined.
+*RNF7503 30    164 000164  Expression contains an operand that is not defined.
+*RNF7503 30    166 000166  Expression contains an operand that is not defined.
+*RNF7503 30    167 000167  Expression contains an operand that is not defined.
+*RNF7503 30    168 000168  Expression contains an operand that is not defined.
+*RNF5410 30    168 000168  The prototype for the call is not defined.
+*RNF7503 30    171 000171  Expression contains an operand that is not defined.
+*RNF7503 30    214 000214  Expression contains an operand that is not defined.
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     13
+*RNF7503 30    216 000216  Expression contains an operand that is not defined.
+*RNF7503 30    217 000217  Expression contains an operand that is not defined.
+*RNF7503 30    218 000218  Expression contains an operand that is not defined.
+*RNF7503 30    219 000219  Expression contains an operand that is not defined.
+*RNF7503 30    220 000220  Expression contains an operand that is not defined.
+*RNF7503 30    221 000221  Expression contains an operand that is not defined.
+*RNF7503 30    222 000222  Expression contains an operand that is not defined.
+*RNF7503 30    228 000228  Expression contains an operand that is not defined.
+*RNF7503 30    229 000229  Expression contains an operand that is not defined.
+*RNF7503 30    230 000230  Expression contains an operand that is not defined.
+*RNF7503 30    232 000232  Expression contains an operand that is not defined.
+*RNF5410 30    232 000232  The prototype for the call is not defined.
+*RNF7503 30    233 000233  Expression contains an operand that is not defined.
+*RNF7503 30    234 000234  Expression contains an operand that is not defined.
+*RNF7503 30    235 000235  Expression contains an operand that is not defined.
+*RNF7503 30    236 000236  Expression contains an operand that is not defined.
+*RNF7503 30    237 000237  Expression contains an operand that is not defined.
+*RNF7503 30    238 000238  Expression contains an operand that is not defined.
+*RNF7503 30    239 000239  Expression contains an operand that is not defined.
+*RNF7503 30    240 000240  Expression contains an operand that is not defined.
+*RNF7503 30    241 000241  Expression contains an operand that is not defined.
+*RNF7503 30    244 000244  Expression contains an operand that is not defined.
+*RNF7503 30    245 000245  Expression contains an operand that is not defined.
+*RNF7503 30    246 000246  Expression contains an operand that is not defined.
+*RNF7503 30    247 000247  Expression contains an operand that is not defined.
+*RNF7503 30    248 000248  Expression contains an operand that is not defined.
+*RNF7503 30    250 000250  Expression contains an operand that is not defined.
+*RNF7503 30    263 000263  Expression contains an operand that is not defined.
+ * * * * *   E N D   O F   A D D I T I O N A L   D I A G N O S T I C   M E S S A G E S   * * * * *
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     14
+                          C r o s s   R e f e r e n c e
+      File and Record References:
+         File              Device             References (D=Defined)
+           Record
+         CEIDIBPF          DISK                   17D
+         CSCFS50PF         DISK                   22D
+      Global Field References:
+         Field             Attributes         References (D=Defined M=Modified)
+         *INLR             N(1)                   98M
+*RNF7030 BEDRAG01          **UNDEF**             168     195     258
+*RNF7030 BETKEN01          **UNDEF**             168     191
+*RNF7030 CDEVAL01          **UNDEF**             168     199
+*RNF7030 DAFVNR01          **UNDEF**             168     182
+*RNF7030 DATBKN01          **UNDEF**             168     188
+*RNF7030 DATTRS01          **UNDEF**             168     190
+*RNF7030 DATVAL01          **UNDEF**             168     189
+*RNF7030 DIBTEXT           **UNDEF**             125     166
+*RNF7030 DTAVLGNMR         **UNDEF**              94
+*RNF7030 F50BEDRAG         **UNDEF**             233M
+*RNF7030 F50BETKEN         **UNDEF**             228M
+*RNF7030 F50CDEVAL         **UNDEF**             235M
+*RNF7030 F50DAFVNR         **UNDEF**             218M
+*RNF7030 F50DATTRS         **UNDEF**             227M
+*RNF7030 F50DATVAL         **UNDEF**             225M
+*RNF7030 F50HERCDE         **UNDEF**             222M
+*RNF7030 F50HRKSLT         **UNDEF**             246M
+*RNF7030 F50IBAN           **UNDEF**             248M
+*RNF7030 F50INDDCR         **UNDEF**             234M
+*RNF7030 F50INFANV         **UNDEF**             241M
+*RNF7030 F50MUTNRO         **UNDEF**             240M
+*RNF7030 F50MUTSRT         **UNDEF**             238M
+*RNF7030 F50MUTTYP         **UNDEF**             236M
+*RNF7030 F50MUTVNR         **UNDEF**             219M
+*RNF7030 F50NVRGEG         **UNDEF**             229M
+*RNF7030 F50OMSCHR         **UNDEF**             230M
+*RNF7030 F50PCDTRK         **UNDEF**             239M
+*RNF7030 F50RECTYP         **UNDEF**             216M
+*RNF7030 F50REKNMR         **UNDEF**             217M
+*RNF7030 F50RESOPV         **UNDEF**             247M
+*RNF7030 F50SRTSLT         **UNDEF**             245M
+*RNF7030 F50TEGREK         **UNDEF**             220M
+*RNF7030 F50TEGRHD         **UNDEF**             221M
+*RNF7030 F50TRSDAT         **UNDEF**             243M
+*RNF7030 F50TRSTYD         **UNDEF**             244M
+*RNF7030 F50USRIDD         **UNDEF**             237M
+         F50VLD00          DS(21)                 39D     94     113
+         F50VLD01          DS(547)                44D     96     158
+*RNF7031   BEDRAG01        A(13)                  58D
+*RNF7031   BETKEN01        A(16)                  55D
+*RNF7031   CDEVAL01        A(3)                   60D
+*RNF7031   DAFVNR01        A(4)                   47D
+*RNF7031   DATBKN01        A(8)                   52D
+*RNF7031   DATTRS01        A(8)                   54D
+*RNF7031   DATVAL01        A(8)                   53D
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     15
+*RNF7031   HERCDE01        A(5)                   51D
+*RNF7031   HRKSLT01        A(20)                  70D
+*RNF7031   IBAN01          A(34)                  71D
+*RNF7031   INDDCR01        A(1)                   59D
+*RNF7031   INFANV01        A(30)                  66D
+*RNF7031   MUTNRO01        A(10)                  65D
+*RNF7031   MUTSRT01        A(5)                   63D
+*RNF7031   MUTTYP01        A(5)                   61D
+*RNF7031   MUTVNR01        A(10)                  48D
+*RNF7031   NVRGEG01        A(29)                  56D
+*RNF7031   OMSCHR01        A(256)                 57D
+*RNF7031   PCDTRK01        A(6)                   64D
+*RNF7031   RECTYP01        A(2)                   45D
+*RNF7031   REKNMR01        A(10)                  46D
+*RNF7031   RESOPV01        A(11)                  72D
+*RNF7031   SRTSLT01        A(1)                   69D
+*RNF7031   TEGREK01        A(10)                  49D
+*RNF7031   TEGRHD01        A(24)                  50D
+*RNF7031   TRSDAT01        A(8)                   67D
+*RNF7031   TRSTYD01        A(5)                   68D
+*RNF7031   USRIDD01        A(5)                   62D
+*RNF7030 HERCDE01          **UNDEF**             168     186
+         HLPBEDRAGA        A(13)                  32D    168     194     257
+         HLPBEDRAGN        S(13,0)                33D    168     196     259
+*RNF7030 HLPDATIN          **UNDEF**             168     225     225     227
+                                                 227     243     243
+         HLPDIGITS         CONST                  29D    268     276
+         HLPNEGATIVE       CONST                  30D    266     268
+         HLPPOS            S(2,0)                 34D    168     197     260
+         HLPPOSITIVE       CONST                  31D    274     276
+*RNF7030 HLPRECTEL         **UNDEF**              96
+*RNF7030 HLPVLGNMR         **UNDEF**              94     138     138
+*RNF7030 HRKSLT01          **UNDEF**             168     209
+*RNF7030 IBAN01            **UNDEF**             168     211
+*RNF7030 INDDCR01          **UNDEF**             168     198
+*RNF7030 INFANV01          **UNDEF**             168     205
+         INITIALISATIE     PROTOTYPE              94M    111
+*RNF7030 INTFOUTCD         **UNDEF**              94      95
+*RNF7030 INTVLGNRNW        **UNDEF**              94
+*RNF7030 INTVLGNROUD       **UNDEF**              94
+*RNF7030 JZZRG004_GETDAT   **UNDEF**             225     227     243
+*RNF7030 MUTNRO01          **UNDEF**             168     204
+*RNF7030 MUTSRT01          **UNDEF**             168     202
+*RNF7030 MUTTYP01          **UNDEF**             168     200
+*RNF7030 MUTVNR01          **UNDEF**             168     183
+*RNF7030 NVRGEG01          **UNDEF**             168     192
+*RNF7030 OMSCHR01          **UNDEF**             168     193
+         OMZETTENBEDRAGVELD...
+                           PROTOTYPE             232M    255
+*RNF7030 PCDTRK01          **UNDEF**             168     203
+         RECTYP00          A(2)                   40D     94     114
+*RNF7030 RECTYP01          **UNDEF**              96     159     168     180
+*RNF7030 REIDIBPF          **UNDEF**             123     164     171
+*RNF7030 REKNMR01          **UNDEF**             168     181
+*RNF7030 RESOPV01          **UNDEF**             168     210
+*RNF7030 RFS50PF           **UNDEF**             214M    250
+         SCHRIJFZACHTREGRES...
+                           PROTOTYPE             168M    178
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     16
+*RNF7030 SRTSLT01          **UNDEF**             168     208
+*RNF7030 TEGREK01          **UNDEF**             168     184
+*RNF7030 TEGRHD01          **UNDEF**             168     185
+*RNF7030 TRSDAT01          **UNDEF**             168     206
+*RNF7030 TRSTYD01          **UNDEF**             168     207
+*RNF7030 USRIDD01          **UNDEF**             168     201
+         VERWERKING        PROTOTYPE              96M    156
+         VLGNMR00          A(3)                   41D     94     117
+      Field References for subprocedure INITIALISATIE
+         Field             Attributes         References (D=Defined M=Modified)
+*RNF7030 P                 **UNDEF**             115D    127M    132M    135M
+                                                 138     139M    141M    144M
+                                                 147M
+         PF50VLD00         DS(21)                113D    125M
+         PRECTYP00         A(2)                  114D    126
+         PVLGNMR00         A(3)                  117D    130
+      Field References for subprocedure VERWERKING
+         Field             Attributes         References (D=Defined M=Modified)
+*RNF7030 P                 **UNDEF**             160D    169M
+         PF50VLD01         DS(547)               158D    166M
+*RNF7030 PRECTYP01         **UNDEF**             159D    167
+      Field References for subprocedure SCHRIJFZACHTREGRES
+         Field             Attributes         References (D=Defined M=Modified)
+*RNF7030 P                 **UNDEF**             187D    223M    224M    225
+                                                 226M    227     242M    243
+*RNF7030 P_RECTYP01        **UNDEF**             180D    216
+*RNF7030 PBEDRAG01         **UNDEF**             195D    232
+*RNF7030 PBETKEN01         **UNDEF**             191D    228
+*RNF7030 PCDEVAL01         **UNDEF**             199D    235
+*RNF7030 PDAFVNR01         **UNDEF**             182D    218
+*RNF7030 PDATBKN01         **UNDEF**             188D
+*RNF7030 PDATTRS01         **UNDEF**             190D
+*RNF7030 PDATVAL01         **UNDEF**             189D
+*RNF7030 PHERCDE01         **UNDEF**             186D    222
+         PHLPBEDRAGA       A(13)                 194D    232
+         PHLPBEDRAGN       S(13,0)               196D    232     233
+         PHLPPOS           S(2,0)                197D    232
+*RNF7030 PHRKSLT01         **UNDEF**             209D    246
+*RNF7030 PIBAN01           **UNDEF**             211D    248
+*RNF7030 PINDDCR01         **UNDEF**             198D    234
+*RNF7030 PINFANV01         **UNDEF**             205D    241
+*RNF7030 PMUTNRO01         **UNDEF**             204D    240
+*RNF7030 PMUTSRT01         **UNDEF**             202D    238
+*RNF7030 PMUTTYP01         **UNDEF**             200D    236
+*RNF7030 PMUTVNR01         **UNDEF**             183D    219
+*RNF7030 PNVRGEG01         **UNDEF**             192D    229
+*RNF7030 POMSCHR01         **UNDEF**             193D    230
+*RNF7030 PPCDTRK01         **UNDEF**             203D    239
+*RNF7030 PREKNMR01         **UNDEF**             181D    217
+*RNF7030 PRESOPV01         **UNDEF**             210D    247
+*RNF7030 PSRTSLT01         **UNDEF**             208D    245
+*RNF7030 PTEGREK01         **UNDEF**             184D    220
+*RNF7030 PTEGRHD01         **UNDEF**             185D    221
+*RNF7030 PTRSDAT01         **UNDEF**             206D
+*RNF7030 PTRSTYD01         **UNDEF**             207D    244
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     17
+*RNF7030 PUSRIDD01         **UNDEF**             201D    237
+      Field References for subprocedure OMZETTENBEDRAGVELD
+         Field             Attributes         References (D=Defined M=Modified)
+*RNF7030 PBEDRAG01         **UNDEF**             258D    263
+         PHLPBEDRAGA       A(13)                 257D    263M    266     268M
+                                                 269     270     274     276M
+                                                 277     278     282
+         PHLPBEDRAGN       S(13,0)               259D    264M    270M    278M
+                                                 282M
+         PHLPPOS           S(2,0)                260D    265M    266M    267
+                                                 274M    275
+      Indicator References:
+         Indicator                            References (D=Defined M=Modified)
+         LR                                       98M
+       * * * * *   E N D   O F   C R O S S   R E F E R E N C E   * * * * *
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     18
+                      E x t e r n a l   R e f e r e n c e s
+      Statically bound procedures:
+         Procedure                            References
+         No references in the source.
+      Imported fields:
+         Field             Attributes         Defined
+         No references in the source.
+      Exported fields:
+         Field             Attributes         Defined
+         No references in the source.
+   * * * * *   E N D   O F   E X T E R N A L   R E F E R E N C E S   * * * * *
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     19
+                          M e s s a g e   S u m m a r y
+ Msg id  Sv Number Message text
+*RNF0607 00      7 Text is skipped to recover from the previous error.
+*RNF7031 00     59 The name or indicator is not referenced.
+*RNF0312 20      4 A right parenthesis is expected but is not found.
+*RNF0604 20     24 The token is not valid; token is ignored.
+*RNF0633 20      7 An unexpected right parenthesis was encountered; right
+                   parenthesis is ignored.
+*RNF1520 20      4 The procedure cannot be defined with DFTACTGRP(*YES).
+*RNF3308 20     21 Keyword name is not valid; the keyword is ignored.
+*RNF3436 20      7 The parameter for keyword LIKE is not valid; keyword is
+                   ignored.
+*RNF5377 20      4 The end of the expression is expected.
+*RNF3301 30      7 The Name entry is not valid; specification ignored.
+*RNF3316 30      4 The item has already been defined on a Definition
+                   Specification; specification is ignored.
+*RNF3573 30      1 A parameter is required for the EXTPGM keyword when the
+                   procedure name is longer than 10.
+*RNF5347 30     12 An assignment operator is expected with the EVAL operation.
+*RNF5410 30      4 The prototype for the call is not defined.
+*RNF5508 30      1 End of free-format statement is not blank.
+*RNF7030 30     99 The name or indicator is not defined.
+*RNF7503 30     38 Expression contains an operand that is not defined.
+*RNF0273 40      2 Compiler not able to open the /COPY or /INCLUDE file;
+                   directive ignored.
+*RNF2120 40      2 External description not found for file specified as
+                   externally described; file ignored.
+       * * * * *   E N D   O F   M E S S A G E   S U M M A R Y   * * * * *
+                                                   -=* http://pub400.com *=-
+ 5770WDS V7R5M0  220415 RN        IBM ILE RPG             HEKKR4001/CSCRGFS50      PUB400     03/18/25 09:35:31        Page     20
+                            F i n a l   S u m m a r y
+  Message Totals:
+    Information  (00) . . . . . . . :       66
+    Warning      (10) . . . . . . . :        0
+    Error        (20) . . . . . . . :       71
+    Severe Error (30+)  . . . . . . :      170
+    ---------------------------------  -------
+    Total . . . . . . . . . . . . . :      307
+  Source Totals:
+    Records . . . . . . . . . . . . :      284
+    Specifications  . . . . . . . . :      197
+    Data records  . . . . . . . . . :        0
+    Comments  . . . . . . . . . . . :       76
+         * * * * *   E N D   O F   F I N A L   S U M M A R Y   * * * * *
+Compilation stopped. Severity 40 errors found in program.
+          * * * * *   E N D   O F   C O M P I L A T I O N   * * * * *
+                                                   -=* http://pub400.com *=-
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+

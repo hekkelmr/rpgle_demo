@@ -1,0 +1,312 @@
+TIMESTAMP  0 20250318093531
+PROCESSOR  0 000 1
+FILEID     0 001 000000 062 /home/HEKKR400/builds/rpgle_demo/qrpglesrc/CSCRGFS50.pgm.rpgle 20250318093420 0
+ERROR      0 001 1 000017 000017 007 000017 014 RNF2120 T 40 067 External descriptions for file CEIDIBPF not found; file is ignored.
+ERROR      0 001 1 000022 000022 007 000022 015 RNF2120 T 40 068 External descriptions for file CSCFS50PF not found; file is ignored.
+ERROR      0 001 1 000026 000026 007 000026 031 RNF0273 T 40 072 Compiler not able to open the /COPY or /INCLUDE file; directive ignored.
+ERROR      0 001 1 000027 000027 007 000027 030 RNF0273 T 40 072 Compiler not able to open the /COPY or /INCLUDE file; directive ignored.
+ERROR      0 001 1 000078 000078 007 000078 021 RNF3301 S 30 051 The Name entry is not valid; specification ignored.
+ERROR      0 001 1 000078 000078 008 000078 016 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000079 000079 007 000079 021 RNF3301 S 30 051 The Name entry is not valid; specification ignored.
+ERROR      0 001 1 000079 000079 008 000079 016 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000080 000080 007 000080 021 RNF3301 S 30 051 The Name entry is not valid; specification ignored.
+ERROR      0 001 1 000080 000080 008 000080 016 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000081 000081 007 000081 021 RNF3301 S 30 051 The Name entry is not valid; specification ignored.
+ERROR      0 001 1 000081 000081 008 000081 015 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000086 000086 008 000086 020 RNF3573 S 30 089 A parameter is required for the EXTPGM keyword when the procedure name is longer than 10.
+ERROR      0 001 1 000087 000087 007 000087 021 RNF3301 S 30 051 The Name entry is not valid; specification ignored.
+ERROR      0 001 1 000087 000087 004 000087 014 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000088 000088 007 000088 021 RNF3301 S 30 051 The Name entry is not valid; specification ignored.
+ERROR      0 001 1 000088 000088 004 000088 013 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000089 000089 007 000089 021 RNF3301 S 30 051 The Name entry is not valid; specification ignored.
+ERROR      0 001 1 000089 000089 004 000089 012 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000094 000094 033 000094 033 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000094 000094 044 000094 044 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000094 000094 066 000094 066 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000094 000094 077 000094 077 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000094 000094 088 000094 088 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000095 000095 005 000095 005 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000096 000096 032 000096 032 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000111 000111 010 000111 022 RNF1520 E 20 053 The procedure cannot be defined with DFTACTGRP(*YES).
+ERROR      0 001 1 000115 000115 006 000115 006 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000115 000115 007 000115 015 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000115 000115 022 000115 022 RNF3436 E 20 064 The parameter for keyword LIKE is not valid; keyword is ignored.
+ERROR      0 001 1 000115 000115 023 000115 031 RNF0607 I 00 051 Text is skipped to recover from the previous error.
+ERROR      0 001 1 000115 000115 032 000115 032 RNF0633 E 20 078 An unexpected right parenthesis was encountered; right parenthesis is ignored.
+ERROR      0 001 1 000116 000116 005 000116 005 RNF3316 S 30 090 The item has already been defined on a Definition Specification; specification is ignored.
+ERROR      0 001 1 000116 000116 006 000116 006 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000116 000116 007 000116 017 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000116 000116 024 000116 024 RNF3436 E 20 064 The parameter for keyword LIKE is not valid; keyword is ignored.
+ERROR      0 001 1 000116 000116 025 000116 035 RNF0607 I 00 051 Text is skipped to recover from the previous error.
+ERROR      0 001 1 000116 000116 036 000116 036 RNF0633 E 20 078 An unexpected right parenthesis was encountered; right parenthesis is ignored.
+ERROR      0 001 1 000118 000118 005 000118 005 RNF3316 S 30 090 The item has already been defined on a Definition Specification; specification is ignored.
+ERROR      0 001 1 000118 000118 006 000118 006 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000118 000118 007 000118 015 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000118 000118 022 000118 022 RNF3436 E 20 064 The parameter for keyword LIKE is not valid; keyword is ignored.
+ERROR      0 001 1 000118 000118 023 000118 031 RNF0607 I 00 051 Text is skipped to recover from the previous error.
+ERROR      0 001 1 000118 000118 032 000118 032 RNF0633 E 20 078 An unexpected right parenthesis was encountered; right parenthesis is ignored.
+ERROR      0 001 1 000119 000119 005 000119 005 RNF3316 S 30 090 The item has already been defined on a Definition Specification; specification is ignored.
+ERROR      0 001 1 000119 000119 006 000119 006 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000119 000119 007 000119 015 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000119 000119 022 000119 022 RNF3436 E 20 064 The parameter for keyword LIKE is not valid; keyword is ignored.
+ERROR      0 001 1 000119 000119 023 000119 031 RNF0607 I 00 051 Text is skipped to recover from the previous error.
+ERROR      0 001 1 000119 000119 032 000119 032 RNF0633 E 20 078 An unexpected right parenthesis was encountered; right parenthesis is ignored.
+ERROR      0 001 1 000120 000120 005 000120 005 RNF3316 S 30 090 The item has already been defined on a Definition Specification; specification is ignored.
+ERROR      0 001 1 000120 000120 006 000120 006 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000120 000120 007 000120 016 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000120 000120 023 000120 023 RNF3436 E 20 064 The parameter for keyword LIKE is not valid; keyword is ignored.
+ERROR      0 001 1 000120 000120 024 000120 033 RNF0607 I 00 051 Text is skipped to recover from the previous error.
+ERROR      0 001 1 000120 000120 034 000120 034 RNF0633 E 20 078 An unexpected right parenthesis was encountered; right parenthesis is ignored.
+ERROR      0 001 1 000127 000127 008 000127 008 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000127 000127 009 000127 017 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000132 000132 010 000132 010 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000132 000132 011 000132 019 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000135 000135 010 000135 010 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000135 000135 011 000135 019 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000138 000138 012 000138 012 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000138 000138 013 000138 021 RNF0312 E 20 049 A right parenthesis is expected but is not found.
+ERROR      0 001 1 000138 000138 013 000138 021 RNF5377 E 20 038 The end of the expression is expected.
+ERROR      0 001 1 000139 000139 010 000139 010 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000139 000139 011 000139 019 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000141 000141 010 000141 010 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000141 000141 011 000141 019 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000144 000144 010 000144 010 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000144 000144 011 000144 020 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000147 000147 008 000147 008 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000147 000147 009 000147 017 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000156 000156 010 000156 019 RNF1520 E 20 053 The procedure cannot be defined with DFTACTGRP(*YES).
+ERROR      0 001 1 000160 000160 006 000160 006 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000160 000160 007 000160 015 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000160 000160 022 000160 022 RNF3436 E 20 064 The parameter for keyword LIKE is not valid; keyword is ignored.
+ERROR      0 001 1 000160 000160 023 000160 031 RNF0607 I 00 051 Text is skipped to recover from the previous error.
+ERROR      0 001 1 000160 000160 032 000160 032 RNF0633 E 20 078 An unexpected right parenthesis was encountered; right parenthesis is ignored.
+ERROR      0 001 1 000168 000168 089 000168 089 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000169 000169 008 000169 008 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000169 000169 009 000169 017 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000178 000178 010 000178 027 RNF1520 E 20 053 The procedure cannot be defined with DFTACTGRP(*YES).
+ERROR      0 001 1 000187 000187 006 000187 006 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000187 000187 007 000187 014 RNF3308 E 20 050 Keyword name is not valid; the keyword is ignored.
+ERROR      0 001 1 000187 000187 021 000187 021 RNF3436 E 20 064 The parameter for keyword LIKE is not valid; keyword is ignored.
+ERROR      0 001 1 000187 000187 022 000187 029 RNF0607 I 00 051 Text is skipped to recover from the previous error.
+ERROR      0 001 1 000187 000187 030 000187 030 RNF0633 E 20 078 An unexpected right parenthesis was encountered; right parenthesis is ignored.
+ERROR      0 001 1 000223 000223 004 000223 004 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000223 000223 005 000223 012 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000223 000223 043 000223 043 RNF5508 S 30 042 End of free-format statement is not blank.
+ERROR      0 001 1 000224 000224 004 000224 004 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000224 000224 005 000224 012 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000225 000225 032 000225 032 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000225 000225 033 000225 040 RNF0312 E 20 049 A right parenthesis is expected but is not found.
+ERROR      0 001 1 000225 000225 033 000225 040 RNF5377 E 20 038 The end of the expression is expected.
+ERROR      0 001 1 000226 000226 004 000226 004 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000226 000226 005 000226 012 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000227 000227 032 000227 032 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000227 000227 033 000227 040 RNF0312 E 20 049 A right parenthesis is expected but is not found.
+ERROR      0 001 1 000227 000227 033 000227 040 RNF5377 E 20 038 The end of the expression is expected.
+ERROR      0 001 1 000242 000242 004 000242 004 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000242 000242 005 000242 012 RNF5347 S 30 059 An assignment operator is expected with the EVAL operation.
+ERROR      0 001 1 000243 000243 032 000243 032 RNF0604 E 20 041 The token is not valid; token is ignored.
+ERROR      0 001 1 000243 000243 033 000243 040 RNF0312 E 20 049 A right parenthesis is expected but is not found.
+ERROR      0 001 1 000243 000243 033 000243 040 RNF5377 E 20 038 The end of the expression is expected.
+ERROR      0 001 1 000255 000255 010 000255 027 RNF1520 E 20 053 The procedure cannot be defined with DFTACTGRP(*YES).
+ERROR      0 001 1 000168 000168 164 000168 171 RNF7030 S 30 046 The name or indicator BEDRAG01 is not defined.
+ERROR      0 001 1 000168 000168 126 000168 133 RNF7030 S 30 046 The name or indicator BETKEN01 is not defined.
+ERROR      0 001 1 000168 000168 200 000168 207 RNF7030 S 30 046 The name or indicator CDEVAL01 is not defined.
+ERROR      0 001 1 000086 000086 008 000086 020 RNF7031 I 00 051 The name or indicator CSCRGFS... is not referenced.
+ERROR      0 001 1 000168 000168 044 000168 051 RNF7030 S 30 046 The name or indicator DAFVNR01 is not defined.
+ERROR      0 001 1 000168 000168 099 000168 106 RNF7030 S 30 046 The name or indicator DATBKN01 is not defined.
+ERROR      0 001 1 000168 000168 117 000168 124 RNF7030 S 30 046 The name or indicator DATTRS01 is not defined.
+ERROR      0 001 1 000168 000168 108 000168 115 RNF7030 S 30 046 The name or indicator DATVAL01 is not defined.
+ERROR      0 001 1 000125 000125 023 000125 029 RNF7030 S 30 045 The name or indicator DIBTEXT is not defined.
+ERROR      0 001 1 000094 000094 034 000094 042 RNF7030 S 30 047 The name or indicator DTAVLGNMR is not defined.
+ERROR      0 001 1 000233 000233 003 000233 011 RNF7030 S 30 047 The name or indicator F50BEDRAG is not defined.
+ERROR      0 001 1 000228 000228 003 000228 011 RNF7030 S 30 047 The name or indicator F50BETKEN is not defined.
+ERROR      0 001 1 000235 000235 003 000235 011 RNF7030 S 30 047 The name or indicator F50CDEVAL is not defined.
+ERROR      0 001 1 000218 000218 003 000218 011 RNF7030 S 30 047 The name or indicator F50DAFVNR is not defined.
+ERROR      0 001 1 000227 000227 003 000227 011 RNF7030 S 30 047 The name or indicator F50DATTRS is not defined.
+ERROR      0 001 1 000225 000225 003 000225 011 RNF7030 S 30 047 The name or indicator F50DATVAL is not defined.
+ERROR      0 001 1 000222 000222 003 000222 011 RNF7030 S 30 047 The name or indicator F50HERCDE is not defined.
+ERROR      0 001 1 000246 000246 003 000246 011 RNF7030 S 30 047 The name or indicator F50HRKSLT is not defined.
+ERROR      0 001 1 000248 000248 003 000248 009 RNF7030 S 30 045 The name or indicator F50IBAN is not defined.
+ERROR      0 001 1 000234 000234 003 000234 011 RNF7030 S 30 047 The name or indicator F50INDDCR is not defined.
+ERROR      0 001 1 000241 000241 003 000241 011 RNF7030 S 30 047 The name or indicator F50INFANV is not defined.
+ERROR      0 001 1 000240 000240 003 000240 011 RNF7030 S 30 047 The name or indicator F50MUTNRO is not defined.
+ERROR      0 001 1 000238 000238 003 000238 011 RNF7030 S 30 047 The name or indicator F50MUTSRT is not defined.
+ERROR      0 001 1 000236 000236 003 000236 011 RNF7030 S 30 047 The name or indicator F50MUTTYP is not defined.
+ERROR      0 001 1 000219 000219 003 000219 011 RNF7030 S 30 047 The name or indicator F50MUTVNR is not defined.
+ERROR      0 001 1 000229 000229 003 000229 011 RNF7030 S 30 047 The name or indicator F50NVRGEG is not defined.
+ERROR      0 001 1 000230 000230 003 000230 011 RNF7030 S 30 047 The name or indicator F50OMSCHR is not defined.
+ERROR      0 001 1 000239 000239 003 000239 011 RNF7030 S 30 047 The name or indicator F50PCDTRK is not defined.
+ERROR      0 001 1 000216 000216 003 000216 011 RNF7030 S 30 047 The name or indicator F50RECTYP is not defined.
+ERROR      0 001 1 000217 000217 003 000217 011 RNF7030 S 30 047 The name or indicator F50REKNMR is not defined.
+ERROR      0 001 1 000247 000247 003 000247 011 RNF7030 S 30 047 The name or indicator F50RESOPV is not defined.
+ERROR      0 001 1 000245 000245 003 000245 011 RNF7030 S 30 047 The name or indicator F50SRTSLT is not defined.
+ERROR      0 001 1 000220 000220 003 000220 011 RNF7030 S 30 047 The name or indicator F50TEGREK is not defined.
+ERROR      0 001 1 000221 000221 003 000221 011 RNF7030 S 30 047 The name or indicator F50TEGRHD is not defined.
+ERROR      0 001 1 000243 000243 003 000243 011 RNF7030 S 30 047 The name or indicator F50TRSDAT is not defined.
+ERROR      0 001 1 000244 000244 003 000244 011 RNF7030 S 30 047 The name or indicator F50TRSTYD is not defined.
+ERROR      0 001 1 000237 000237 003 000237 011 RNF7030 S 30 047 The name or indicator F50USRIDD is not defined.
+ERROR      0 001 1 000045 000045 003 000045 010 RNF7031 I 00 049 The name or indicator RECTYP01 is not referenced.
+ERROR      0 001 1 000046 000046 003 000046 010 RNF7031 I 00 049 The name or indicator REKNMR01 is not referenced.
+ERROR      0 001 1 000047 000047 003 000047 010 RNF7031 I 00 049 The name or indicator DAFVNR01 is not referenced.
+ERROR      0 001 1 000048 000048 003 000048 010 RNF7031 I 00 049 The name or indicator MUTVNR01 is not referenced.
+ERROR      0 001 1 000049 000049 003 000049 010 RNF7031 I 00 049 The name or indicator TEGREK01 is not referenced.
+ERROR      0 001 1 000050 000050 003 000050 010 RNF7031 I 00 049 The name or indicator TEGRHD01 is not referenced.
+ERROR      0 001 1 000051 000051 003 000051 010 RNF7031 I 00 049 The name or indicator HERCDE01 is not referenced.
+ERROR      0 001 1 000052 000052 003 000052 010 RNF7031 I 00 049 The name or indicator DATBKN01 is not referenced.
+ERROR      0 001 1 000053 000053 003 000053 010 RNF7031 I 00 049 The name or indicator DATVAL01 is not referenced.
+ERROR      0 001 1 000054 000054 003 000054 010 RNF7031 I 00 049 The name or indicator DATTRS01 is not referenced.
+ERROR      0 001 1 000055 000055 003 000055 010 RNF7031 I 00 049 The name or indicator BETKEN01 is not referenced.
+ERROR      0 001 1 000056 000056 003 000056 010 RNF7031 I 00 049 The name or indicator NVRGEG01 is not referenced.
+ERROR      0 001 1 000057 000057 003 000057 010 RNF7031 I 00 049 The name or indicator OMSCHR01 is not referenced.
+ERROR      0 001 1 000058 000058 003 000058 010 RNF7031 I 00 049 The name or indicator BEDRAG01 is not referenced.
+ERROR      0 001 1 000059 000059 003 000059 010 RNF7031 I 00 049 The name or indicator INDDCR01 is not referenced.
+ERROR      0 001 1 000060 000060 003 000060 010 RNF7031 I 00 049 The name or indicator CDEVAL01 is not referenced.
+ERROR      0 001 1 000061 000061 003 000061 010 RNF7031 I 00 049 The name or indicator MUTTYP01 is not referenced.
+ERROR      0 001 1 000062 000062 003 000062 010 RNF7031 I 00 049 The name or indicator USRIDD01 is not referenced.
+ERROR      0 001 1 000063 000063 003 000063 010 RNF7031 I 00 049 The name or indicator MUTSRT01 is not referenced.
+ERROR      0 001 1 000064 000064 003 000064 010 RNF7031 I 00 049 The name or indicator PCDTRK01 is not referenced.
+ERROR      0 001 1 000065 000065 003 000065 010 RNF7031 I 00 049 The name or indicator MUTNRO01 is not referenced.
+ERROR      0 001 1 000066 000066 003 000066 010 RNF7031 I 00 049 The name or indicator INFANV01 is not referenced.
+ERROR      0 001 1 000067 000067 003 000067 010 RNF7031 I 00 049 The name or indicator TRSDAT01 is not referenced.
+ERROR      0 001 1 000068 000068 003 000068 010 RNF7031 I 00 049 The name or indicator TRSTYD01 is not referenced.
+ERROR      0 001 1 000069 000069 003 000069 010 RNF7031 I 00 049 The name or indicator SRTSLT01 is not referenced.
+ERROR      0 001 1 000070 000070 003 000070 010 RNF7031 I 00 049 The name or indicator HRKSLT01 is not referenced.
+ERROR      0 001 1 000071 000071 003 000071 008 RNF7031 I 00 047 The name or indicator IBAN01 is not referenced.
+ERROR      0 001 1 000072 000072 003 000072 010 RNF7031 I 00 049 The name or indicator RESOPV01 is not referenced.
+ERROR      0 001 1 000168 000168 080 000168 087 RNF7030 S 30 046 The name or indicator HERCDE01 is not defined.
+ERROR      0 001 1 000168 000168 090 000168 097 RNF7030 S 30 046 The name or indicator HLPDATIN is not defined.
+ERROR      0 001 1 000096 000096 033 000096 041 RNF7030 S 30 047 The name or indicator HLPRECTEL is not defined.
+ERROR      0 001 1 000094 000094 067 000094 075 RNF7030 S 30 047 The name or indicator HLPVLGNMR is not defined.
+ERROR      0 001 1 000168 000168 290 000168 297 RNF7030 S 30 046 The name or indicator HRKSLT01 is not defined.
+ERROR      0 001 1 000168 000168 308 000168 313 RNF7030 S 30 044 The name or indicator IBAN01 is not defined.
+ERROR      0 001 1 000168 000168 191 000168 198 RNF7030 S 30 046 The name or indicator INDDCR01 is not defined.
+ERROR      0 001 1 000168 000168 254 000168 261 RNF7030 S 30 046 The name or indicator INFANV01 is not defined.
+ERROR      0 001 1 000094 000094 078 000094 086 RNF7030 S 30 047 The name or indicator INTFOUTCD is not defined.
+ERROR      0 001 1 000094 000094 089 000094 098 RNF7030 S 30 048 The name or indicator INTVLGNRNW is not defined.
+ERROR      0 001 1 000094 000094 045 000094 055 RNF7030 S 30 048 The name or indicator INTVLGN... is not defined.
+ERROR      0 001 1 000225 000225 015 000225 029 RNF7030 S 30 048 The name or indicator JZZRG00... is not defined.
+ERROR      0 001 1 000168 000168 245 000168 252 RNF7030 S 30 046 The name or indicator MUTNRO01 is not defined.
+ERROR      0 001 1 000168 000168 227 000168 234 RNF7030 S 30 046 The name or indicator MUTSRT01 is not defined.
+ERROR      0 001 1 000168 000168 209 000168 216 RNF7030 S 30 046 The name or indicator MUTTYP01 is not defined.
+ERROR      0 001 1 000168 000168 053 000168 060 RNF7030 S 30 046 The name or indicator MUTVNR01 is not defined.
+ERROR      0 001 1 000168 000168 135 000168 142 RNF7030 S 30 046 The name or indicator NVRGEG01 is not defined.
+ERROR      0 001 1 000168 000168 144 000168 151 RNF7030 S 30 046 The name or indicator OMSCHR01 is not defined.
+ERROR      0 001 1 000115 000115 005 000115 005 RNF7030 S 30 039 The name or indicator P is not defined.
+ERROR      0 001 1 000160 000160 005 000160 005 RNF7030 S 30 039 The name or indicator P is not defined.
+ERROR      0 001 1 000187 000187 005 000187 005 RNF7030 S 30 039 The name or indicator P is not defined.
+ERROR      0 001 1 000180 000180 005 000180 014 RNF7030 S 30 048 The name or indicator P_RECTYP01 is not defined.
+ERROR      0 001 1 000195 000195 005 000195 013 RNF7030 S 30 047 The name or indicator PBEDRAG01 is not defined.
+ERROR      0 001 1 000258 000258 005 000258 013 RNF7030 S 30 047 The name or indicator PBEDRAG01 is not defined.
+ERROR      0 001 1 000191 000191 005 000191 013 RNF7030 S 30 047 The name or indicator PBETKEN01 is not defined.
+ERROR      0 001 1 000199 000199 005 000199 013 RNF7030 S 30 047 The name or indicator PCDEVAL01 is not defined.
+ERROR      0 001 1 000168 000168 236 000168 243 RNF7030 S 30 046 The name or indicator PCDTRK01 is not defined.
+ERROR      0 001 1 000182 000182 005 000182 013 RNF7030 S 30 047 The name or indicator PDAFVNR01 is not defined.
+ERROR      0 001 1 000188 000188 005 000188 013 RNF7030 S 30 047 The name or indicator PDATBKN01 is not defined.
+ERROR      0 001 1 000190 000190 005 000190 013 RNF7030 S 30 047 The name or indicator PDATTRS01 is not defined.
+ERROR      0 001 1 000189 000189 005 000189 013 RNF7030 S 30 047 The name or indicator PDATVAL01 is not defined.
+ERROR      0 001 1 000113 000113 005 000113 013 RNF7031 I 00 049 The name or indicator RECTYP00 is not referenced.
+ERROR      0 001 1 000113 000113 005 000113 013 RNF7031 I 00 049 The name or indicator VLGNMR00 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator RECTYP01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator REKNMR01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator DAFVNR01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator MUTVNR01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator TEGREK01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator TEGRHD01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator HERCDE01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator DATBKN01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator DATVAL01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator DATTRS01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator BETKEN01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator NVRGEG01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator OMSCHR01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator BEDRAG01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator INDDCR01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator CDEVAL01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator MUTTYP01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator USRIDD01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator MUTSRT01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator PCDTRK01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator MUTNRO01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator INFANV01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator TRSDAT01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator TRSTYD01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator SRTSLT01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator HRKSLT01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 047 The name or indicator IBAN01 is not referenced.
+ERROR      0 001 1 000158 000158 005 000158 013 RNF7031 I 00 049 The name or indicator RESOPV01 is not referenced.
+ERROR      0 001 1 000186 000186 005 000186 013 RNF7030 S 30 047 The name or indicator PHERCDE01 is not defined.
+ERROR      0 001 1 000209 000209 005 000209 013 RNF7030 S 30 047 The name or indicator PHRKSLT01 is not defined.
+ERROR      0 001 1 000211 000211 005 000211 011 RNF7030 S 30 045 The name or indicator PIBAN01 is not defined.
+ERROR      0 001 1 000198 000198 005 000198 013 RNF7030 S 30 047 The name or indicator PINDDCR01 is not defined.
+ERROR      0 001 1 000205 000205 005 000205 013 RNF7030 S 30 047 The name or indicator PINFANV01 is not defined.
+ERROR      0 001 1 000204 000204 005 000204 013 RNF7030 S 30 047 The name or indicator PMUTNRO01 is not defined.
+ERROR      0 001 1 000202 000202 005 000202 013 RNF7030 S 30 047 The name or indicator PMUTSRT01 is not defined.
+ERROR      0 001 1 000200 000200 005 000200 013 RNF7030 S 30 047 The name or indicator PMUTTYP01 is not defined.
+ERROR      0 001 1 000183 000183 005 000183 013 RNF7030 S 30 047 The name or indicator PMUTVNR01 is not defined.
+ERROR      0 001 1 000192 000192 005 000192 013 RNF7030 S 30 047 The name or indicator PNVRGEG01 is not defined.
+ERROR      0 001 1 000193 000193 005 000193 013 RNF7030 S 30 047 The name or indicator POMSCHR01 is not defined.
+ERROR      0 001 1 000203 000203 005 000203 013 RNF7030 S 30 047 The name or indicator PPCDTRK01 is not defined.
+ERROR      0 001 1 000159 000159 005 000159 013 RNF7030 S 30 047 The name or indicator PRECTYP01 is not defined.
+ERROR      0 001 1 000181 000181 005 000181 013 RNF7030 S 30 047 The name or indicator PREKNMR01 is not defined.
+ERROR      0 001 1 000210 000210 005 000210 013 RNF7030 S 30 047 The name or indicator PRESOPV01 is not defined.
+ERROR      0 001 1 000208 000208 005 000208 013 RNF7030 S 30 047 The name or indicator PSRTSLT01 is not defined.
+ERROR      0 001 1 000184 000184 005 000184 013 RNF7030 S 30 047 The name or indicator PTEGREK01 is not defined.
+ERROR      0 001 1 000185 000185 005 000185 013 RNF7030 S 30 047 The name or indicator PTEGRHD01 is not defined.
+ERROR      0 001 1 000206 000206 005 000206 013 RNF7030 S 30 047 The name or indicator PTRSDAT01 is not defined.
+ERROR      0 001 1 000207 000207 005 000207 013 RNF7030 S 30 047 The name or indicator PTRSTYD01 is not defined.
+ERROR      0 001 1 000201 000201 005 000201 013 RNF7030 S 30 047 The name or indicator PUSRIDD01 is not defined.
+ERROR      0 001 1 000096 000096 023 000096 030 RNF7030 S 30 046 The name or indicator RECTYP01 is not defined.
+ERROR      0 001 1 000123 000123 009 000123 016 RNF7030 S 30 046 The name or indicator REIDIBPF is not defined.
+ERROR      0 001 1 000168 000168 035 000168 042 RNF7030 S 30 046 The name or indicator REKNMR01 is not defined.
+ERROR      0 001 1 000168 000168 299 000168 306 RNF7030 S 30 046 The name or indicator RESOPV01 is not defined.
+ERROR      0 001 1 000214 000214 009 000214 015 RNF7030 S 30 045 The name or indicator RFS50PF is not defined.
+ERROR      0 001 1 000168 000168 281 000168 288 RNF7030 S 30 046 The name or indicator SRTSLT01 is not defined.
+ERROR      0 001 1 000168 000168 062 000168 069 RNF7030 S 30 046 The name or indicator TEGREK01 is not defined.
+ERROR      0 001 1 000168 000168 071 000168 078 RNF7030 S 30 046 The name or indicator TEGRHD01 is not defined.
+ERROR      0 001 1 000168 000168 263 000168 270 RNF7030 S 30 046 The name or indicator TRSDAT01 is not defined.
+ERROR      0 001 1 000168 000168 272 000168 279 RNF7030 S 30 046 The name or indicator TRSTYD01 is not defined.
+ERROR      0 001 1 000168 000168 218 000168 225 RNF7030 S 30 046 The name or indicator USRIDD01 is not defined.
+ERROR      0 001 1 000094 000094 034 000094 042 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000094 000094 001 000094 000 RNF5410 S 30 042 The prototype for the call is not defined.
+ERROR      0 001 1 000095 000095 006 000095 014 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000096 000096 023 000096 030 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000096 000096 001 000096 000 RNF5410 S 30 042 The prototype for the call is not defined.
+ERROR      0 001 1 000123 000123 009 000123 016 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000125 000125 023 000125 029 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000164 000164 009 000164 016 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000166 000166 017 000166 023 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000167 000167 009 000167 017 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000168 000168 026 000168 033 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000168 000168 001 000168 000 RNF5410 S 30 042 The prototype for the call is not defined.
+ERROR      0 001 1 000171 000171 011 000171 018 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000214 000214 009 000214 015 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000216 000216 003 000216 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000217 000217 003 000217 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000218 000218 003 000218 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000219 000219 003 000219 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000220 000220 003 000220 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000221 000221 003 000221 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000222 000222 003 000222 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000228 000228 003 000228 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000229 000229 003 000229 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000230 000230 003 000230 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000232 000232 034 000232 042 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000232 000232 001 000232 000 RNF5410 S 30 042 The prototype for the call is not defined.
+ERROR      0 001 1 000233 000233 003 000233 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000234 000234 003 000234 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000235 000235 003 000235 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000236 000236 003 000236 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000237 000237 003 000237 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000238 000238 003 000238 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000239 000239 003 000239 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000240 000240 003 000240 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000241 000241 003 000241 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000244 000244 003 000244 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000245 000245 003 000245 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000246 000246 003 000246 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000247 000247 003 000247 011 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000248 000248 003 000248 009 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000250 000250 009 000250 015 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 1 000263 000263 019 000263 027 RNF7503 S 30 051 Expression contains an operand that is not defined.
+ERROR      0 001 0 000000 000000 000 000000 000 RNS9308 T 50 057 Compilation stopped. Severity 40 errors found in program.
+FILEEND    0 001 000284

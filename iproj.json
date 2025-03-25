@@ -1,18 +1,21 @@
 {
-    "version": "0.0.1",
-    "description": "SAMPLE PROJECT",
-    "objlib": "&lib1",
-    "curlib": "&lib1",
-    "includePath": [
-      "includes",
-      "QPROTOSRC"
-    ],
-    "preUsrlibl": [
-      "&lib1"
-    ],
-    "postUsrlibl": [],
-    "setIBMiEnvCmd": [],
-    "repository": "https://github.com/hekkelmr/rpgle_demo.git",
-    "compileCommand": "/QOpenSys/pkgs/bin/makei c -f {filename}",
-    "buildCommand": "/QOpenSys/pkgs/bin/makei build"
-  }
+  "version": "0.0.1",
+  "description": "SAMPLE PROJECT",
+  "objlib": "&lib1",
+  "curlib": "&lib1",
+  "includePath": [
+    "includes",
+    "QPROTOSRC",
+    "qrpgleref"
+  ],
+  "preUsrlibl": [
+    "&lib1"
+  ],
+  "postUsrlibl": [
+    "YAJL"
+  ],
+  "setIBMiEnvCmd": [],
+  "repository": "https://github.com/hekkelmr/rpgle_demo.git",
+  "compileCommand": "/QOpenSys/pkgs/bin/makei c -f {filename}",
+  "buildCommand": "/QOpenSys/pkgs/bin/makei build"
+}
